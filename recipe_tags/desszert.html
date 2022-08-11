@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Desszertek</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="../Icon/favicon.ico" type="image/x-icon" />
+    <!-- normalize -->
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <script src="../js/script.js" defer></script>
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <!-- main css -->
+    <link rel="stylesheet" href="../css/main.css" />
+  </head>
+  <body>
+    <!-- nav  -->
+    <nav class="navbar">
+      <div class="nav-center">
+        <div class="nav-header">
+          <a href="../index.html" class="nav-logo">
+            <img src="../Icon/egyszeru_receptek_nav_logo.png" alt="simply recipes" />
+          </a>
+          <button class="nav-btn btn">
+            <i class="fas fa-align-justify"></i>
+          </button>
+        </div>
+        <div class="nav-links">
+          <a href="../index.html" class="nav-link"> home </a>
+          <a href="../tags.html" class="nav-link"> címkék </a>
+          <div class="search-wrapper">
+            <label for="search">Keresés</label>
+            <input type="search" id="search" placeholder="recept keresése" oninput="search()">
+          </div>
+
+          <div class="nav-link contact-link">
+            <button id="veletlen" class="btn"> Véletlen Desszert </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- end of nav -->
+    <main class="page">
+      <div class="featured-recipes">
+        <a href="desszert.html"><h4>Desszertek</h4></a>
+          <!-- recipes list -->
+        <div class="recipes-list" id="recipe-list">
+          <!-- single recipe -->
+          <a href="https://www.nosalty.hu/recept/3bit-szelet-csokimazzal" class="recipe" target="_blank">
+            <img
+              src="https://img-global.cpcdn.com/recipes/2a66edb8ae23852f/1200x630cq70/photo.jpg"
+              class="img recipe-img"
+              alt=""
+            />
+            <h5>3bit szelet</h5>  
+          </a>
+          <!-- end of single recipe -->
+          <!-- single recipe -->
+          <a href="https://www.youtube.com/watch?v=xgnsr5jrecU" class="recipe" target="_blank">
+            <img
+              src="https://rantotthuswokban.bmintbalazs.com/wp-content/uploads/amerikai_palacsinta_afonyaval.jpg"
+              class="img recipe-img"
+              alt=""
+            />
+            <h5>Amerikai Palacsinta</h5>  
+          </a>
+          <!-- end of single recipe -->
+          <!-- single recipe -->
+          <a href="https://www.nosalty.hu/recept/bagolyszem-2" class="recipe" target="_blank">
+            <img
+              src="https://image-api.nosalty.hu/nosalty/images/recipes/21/vo/bagolyszem-2.jpeg?w=640&h=480&fit=crop&s=72cd30bd0d44f1cfeb966779e769b9f2"
+              class="img recipe-img"
+              alt=""
+            />
+            <h5>Bagolyszem</h5>  
+          </a>
+          <!-- end of single recipe -->
+          <!-- single recipe -->
+          <a href="https://www.nosalty.hu/recept/beigli-karacsonyra" class="recipe" target="_blank">
+            <img
+              src="https://img-global.cpcdn.com/recipes/ca36dca4abd2e245/680x482cq70/beigli-recept-foto.jpg"
+              class="img recipe-img"
+              alt=""
+            />
+            <h5>Beigli</h5>  
+          </a>
+          <!-- end of single recipe -->
+          <!-- single recipe -->
+          <a href="https://www.mindmegette.hu/egyszeru-lekvaros-bukta.recept/" class="recipe" target="_blank">
+            <img
+              src="https://img-global.cpcdn.com/recipes/e36627dfe76ca11b/1200x630cq70/photo.jpg"
+              class="img recipe-img"
+              alt=""
+            />
+            <h5>Bukta</h5>  
+          </a>
+          <!-- end of single recipe -->
+          <!-- single recipe -->
+          <a href="https://www.nosalty.hu/recept/repatorta" class="recipe" target="_blank">
+            <img
+              src="https://image-api.nosalty.hu/nosalty/images/recipes/km/5j/repatorta.jpeg?w=640&h=640&fit=crop&s=57d7419383213def4941f4085d72a5b3"
+              class="img recipe-img"
+              alt=""
+            />
+            <h5>Rápatorta</h5>  
+          </a>
+          <!-- end of single recipe -->
+          <!-- single recipe -->
+          <a href="https://www.mindmegette.hu/sajttorta-cheesecake.recept/" class="recipe" target="_blank">
+            <img
+              src="https://natashaskitchen.com/wp-content/uploads/2020/05/Pefect-Cheesecake-7.jpg"
+              class="img recipe-img"
+              alt=""
+            />
+            <h5>Cheesecake</h5>  
+          </a>
+          <!-- end of single recipe -->
+          <!-- single recipe -->
+          <a href="https://www.nosalty.hu/recept/gyors-nutellas-brownie" class="recipe" target="_blank">
+            <img
+              src="https://image-api.nosalty.hu/nosalty/images/recipes/57/qq/gyors-nutellas-brownie.jpeg?w=640&h=640&fit=crop&s=e980f9ad54379f9ec2f9cf3d2c1f5171"
+              class="img recipe-img"
+              alt=""
+            />
+            <h5>Brownie</h5>  
+          </a>
+          <!-- end of single recipe -->
+          <!-- single recipe -->
+          <a href="https://www.delish.com/cooking/recipe-ideas/recipes/a52644/chocolate-fudge-cake-recip" class="recipe" target="_blank">
+            <img
+              src="https://hips.hearstapps.com/delish/assets/17/16/1492694005-108-sein-9781101967140-art-r1-1.jpg"
+              class="img recipe-img"
+              alt=""
+            />
+            <h5>Chocolate Fudge Cake</h5>  
+          </a>
+          <!-- end of single recipe -->
+          <!-- single recipe -->
+          <a href="https://www.mindmegette.hu/citrom-tarte.recept/" class="recipe" target="_blank">
+            <img
+              src="https://kencze.hu/wp-content/uploads/2021/01/Citrom-tart-05.jpg"
+              class="img recipe-img"
+              alt=""
+            />
+            <h5>Citromos Tarte</h5>  
+          </a>
+          <!-- end of single recipe -->
+          <!-- single recipe -->
+          <a href="https://www.nosalty.hu/recept/csokibomba" class="recipe" target="_blank">
+            <img
+              src="https://image-api.nosalty.hu/nosalty/images/recipes/KB/QW/csokibomba.jpeg?w=640&h=640&fit=crop&s=acb92ac626fd74ecd39b0b2565872b5a"
+              class="img recipe-img"
+              alt=""
+            />
+            <h5>Csokibomba</h5>  
+          </a>
+          <!-- end of single recipe -->
+          <!-- single recipe -->
+          <a href="https://www.mindmegette.hu/egyszeru-csokitorta.recept/" class="recipe" target="_blank">
+            <img
+              src="https://www.mindmegette.hu/images/157/O/crop_201607062250_thinkstockphotos-531869654.jpg"
+              class="img recipe-img"
+              alt=""
+            />
+            <h5>Csoki torta</h5>  
+          </a>
+          <!-- end of single recipe -->
+          <!-- single recipe -->
+          <a href="https://www.mindmegette.hu/kakaos-vanilias-csiga.recept/" class="recipe" target="_blank">
+            <img
+              src="https://www.mindmegette.hu/images/10/O/18182_ketszinu-csiga-keksz_n-201510170418.jpg"
+              class="img recipe-img"
+              alt=""
+            />
+            <h5>Csokis vaniliás csigák</h5>  
+          </a>
+          <!-- end of single recipe -->
+          <!-- single recipe -->
+          <a href="https://amiakonyhambolkikerul-hu.webnode.hu/news/csokolade-pattogos-sutemeny-chocolate-crackle-cookies/" class="recipe" target="_blank">
+            <img
+              src="https://4d825e8366.cbaul-cdnwnd.com/b0e56e5942d5b0cad587d2aa259db021/200016230-32338350d3/mini-DSC07480.JPG"
+              class="img recipe-img"
+              alt=""
+            />
+            <h5>Csokoládés pattogós sütemény</h5>  
+          </a>
+          <!-- end of single recipe -->
+          <!-- single recipe -->
+          <a href="https://www.mindmegette.hu/csoroge-fank.recept/" class="recipe" target="_blank">
+            <img
+              src="https://www.mindmegette.hu/images/138/O/18.jpg"
+              class="img recipe-img"
+              alt=""
+            />
+            <h5>Csőröge</h5>  
+          </a>
+          <!-- end of single recipe -->
+          <!-- single recipe -->
+          <a href="https://www.nosalty.hu/recept/daralos-keksz" class="recipe" target="_blank">
+            <img
+              src="https://nlc.p3k.hu/uploads/2018/03/dar%C3%A1l%C3%B3s.jpg"
+              class="img recipe-img"
+              alt=""
+            />
+            <h5>Darálóskeksz</h5>  
+          </a>
+          <!-- end of single recipe -->
+          <!-- single recipe -->
+          <a href="../recipes/desszert/egytojasos.html" class="recipe" target="_blank">
+            <img
+              src="../recipe_pix/egytojasos_torta.JPG"
+              class="img recipe-img"
+              alt=""
+            />
+            <h5>Egytojásos torta</h5>  
+          </a>
+          <!-- end of single recipe -->
+          <!-- single recipe -->
+          <a href="https://www.nosalty.hu/recept/hagyomanyos-edes-fank" class="recipe" target="_blank">
+            <img
+              src="https://image-api.nosalty.hu/nosalty/images/recipes/Yn/BH/hagyomanyos-edes-fank.jpeg?w=640&h=360&fit=crop&s=ce04cb3bb18030e0bf703e3f29241264"
+              class="img recipe-img"
+              alt=""
+            />
+            <h5>Fánk</h5>  
+          </a>
+          <!-- end of single recipe -->
+          <!-- single recipe -->
+          <a href="https://www.youtube.com/watch?v=w2Hzz-cIEJs" class="recipe" target="_blank">
+            <img
+              src="http://1.bp.blogspot.com/-Qg9BIKMimMM/UBJ1w0aqb7I/AAAAAAAABqk/IX6BNfPnXHI/s1600/Foszls-fonott-kalcs-FV.jpg"
+              class="img recipe-img"
+              alt=""
+            />
+            <h5>Fonott kalács</h5>  
+          </a>
+          <!-- end of single recipe -->
+          <!-- single recipe -->
+          <a href="https://www.nosalty.hu/recept/gyors-goffri" class="recipe" target="_blank">
+            <img
+              src="https://st.depositphotos.com/1003272/4045/i/600/depositphotos_40459217-stock-photo-belgium-waffles.jpg"
+              class="img recipe-img"
+              alt=""
+            />
+            <h5>Goffri</h5>  
+          </a>
+          <!-- end of single recipe -->
+          <!-- single recipe -->
+          <a href="https://streetkitchen.hu/meguszos-sutik/klasszik-gyumolcstorta/" class="recipe" target="_blank">
+            <img
+              src="https://streetkitchen.hu/wp-content/uploads/2020/07/klasszik-gyumolcstorta-egyedi-scaled.jpg"
+              class="img recipe-img"
+              alt=""
+            />
+            <h5>Gyümölcs torta</h5>  
+          </a>
+          <!-- end of single recipe -->
+          <!-- single recipe -->
+          <a href="https://magyarkonyhaonline.hu/receptek/tokeletes-hokifli" class="recipe" target="_blank">
+            <img
+              src="https://magyarkonyhaonline.hu/storage/media/images/2020/07/20/OG.hokifli.jpg"
+              class="img recipe-img"
+              alt=""
+            />
+            <h5>Hókifli</h5>  
+          </a>
+          <!-- end of single recipe -->
+          <!-- single recipe -->
+          <a href="https://cookpad.com/hu/receptek/12404770-jugo-kifli" class="recipe" target="_blank">
+            <img
+              src="https://img-global.cpcdn.com/recipes/95436fc6000835e1/1200x630cq70/photo.jpg"
+              class="img recipe-img"
+              alt=""
+            />
+            <h5>Jugó kifli</h5>  
+          </a>
+          <!-- end of single recipe -->
+          <!-- single recipe -->
+          <a href="https://www.nosalty.hu/recept/kakaos-csiga-kelt-tesztabol-doggy-da-cheftol" class="recipe" target="_blank">
+            <img
+              src="https://image-api.nosalty.hu/nosalty/images/recipes/77/l8/kakaos-csiga-kelt-tesztabol-doggy-da-cheftol.jpeg?w=640&h=360&fit=crop&s=a9c42c501e13c5ef9ec83ea0ff2ec8db"
+              class="img recipe-img"
+              alt=""
+            />
+            <h5>Kakaós csiga</h5>  
+          </a>
+          <!-- end of single recipe -->
+          <!-- single recipe -->
+          <a href="https://www.nosalty.hu/recept/caramel-shortbread" class="recipe" target="_blank">
+            <img
+              src="https://image-api.nosalty.hu/nosalty/images/recipes/Ot/cQ/caramel-shortbread.jpeg?w=640&h=640&fit=crop&s=c74f957c99b9210551bb81f67c04d085"
+              class="img recipe-img"
+              alt=""
+            />
+            <h5>Karamellás shortbread</h5>  
+          </a>
+          <!-- end of single recipe -->
+          <!-- single recipe -->
+          <a href="https://egyszerugyorsreceptek.com/kevert-turos-csokis-szelet-nagymama-modra-ha-egyszer-megkostolod-kedvenced-lesz/" class="recipe" target="_blank">
+            <img
+              src="https://egyszerugyorsreceptek.com/wp-content/uploads/2017/09/kevert_turos_-csokis_szelet.jpg"
+              class="img recipe-img"
+              alt=""
+            />
+            <h5>Kavart csokis túrós</h5>  
+          </a>
+          <!-- end of single recipe -->
+          <!-- single recipe -->
+          <a href="https://femina.hu/recept/dios-kevert-suti-recept/" class="recipe" target="_blank">
+            <img
+              src="http://kep.cdn.indexvas.hu/1/0/1577/15779/157799/15779923_14c114bbf45dcf065343728553383f93_wm.jpg"
+              class="img recipe-img"
+              alt=""
+            />
+            <h5>Kevert diós</h5>  
+          </a>
+          <!-- end of single recipe -->
+          <!-- single recipe -->
+          <a href="https://cookpad.com/hu/receptek/8750251-langallo-hazi-kenyerlangos" class="recipe" target="_blank">
+            <img
+              src="https://img-global.cpcdn.com/recipes/05281156b6e2eafd/680x482cq70/langallo-hazi-kenyerlangos-recept-foto.jpg"
+              class="img recipe-img"
+              alt=""
+            />
+            <h5>Kenyérlángos</h5>  
+          </a>
+          <!-- end of single recipe -->
+          <!-- single recipe -->
+          <a href="https://cookpad.com/hu/receptek/11316585-kepviselofank" class="recipe" target="_blank">
+            <img
+              src="https://img-global.cpcdn.com/recipes/f18fb4cab61296d1/1200x630cq70/photo.jpg"
+              class="img recipe-img"
+              alt=""
+            />
+            <h5>Képviselőfánk</h5>  
+          </a>
+          <!-- end of single recipe -->
+          <!-- single recipe -->
+          <a href="https://www.topreceptek.hu/recept/hazi-kinder-bueno-szelet-ahogy-mi-szeretjuk-r658" class="recipe" target="_blank">
+            <img
+              src="https://i.ytimg.com/vi/pEapitKCEk8/maxresdefault.jpg"
+              class="img recipe-img"
+              alt=""
+            />
+            <h5>Kinder buenó szelet</h5>  
+          </a>
+          <!-- end of single recipe -->
+          <!-- single recipe -->
+          <a href="https://www.mindmegette.hu/kokuszgolyo-pofonegyszeruen.recept/" class="recipe" target="_blank">
+            <img
+              src="https://www.mindmegette.hu/images/179/O/crop_201701191854_kokuszgolyo.jpg"
+              class="img recipe-img"
+              alt=""
+            />
+            <h5>Kókusz golyó</h5>  
+          </a>
+          <!-- end of single recipe -->
+          <!-- single recipe -->
+          <a href="https://www.mindmegette.hu/hagyomanyos-kokuszkocka.recept/" class="recipe" target="_blank">
+            <img
+              src="https://www.mindmegette.hu/images/232/O/kokuszkocka.jpg"
+              class="img recipe-img"
+              alt=""
+            />
+            <h5>Kókusz kocka</h5>  
+          </a>
+          <!-- end of single recipe -->
+          <!-- single recipe -->
+          <a href="https://www.mindmegette.hu/hazi-kremes-egyszeruen-finoman.recept/" class="recipe" target="_blank">
+            <img
+              src="https://www.mindmegette.hu/images/240/O/shutterstock_392936185.jpg"
+              class="img recipe-img"
+              alt=""
+            />
+            <h5>Krémes</h5>  
+          </a>
+          <!-- end of single recipe -->
+          <!-- single recipe -->
+          <a href="https://www.mindmegette.hu/pehelykonnyu-burgonyas-pogacsa.recept/" class="recipe" target="_blank">
+            <img
+              src="https://www.mindmegette.hu/images/11/O/19471_burgonyas-pogacsa1-201510170436.jpg"
+              class="img recipe-img"
+              alt=""
+            />
+            <h5>Krumplis pogácsa</h5>  
+          </a>
+          <!-- end of single recipe -->
+          <!-- single recipe -->
+          <a href="https://streetkitchen.hu/pekseg/kurtoskalacs-sutoben/" class="recipe" target="_blank">
+            <img
+              src="https://streetkitchen.hu/wp-content/uploads/2019/08/kurtos-kalacs-egyedi.jpg"
+              class="img recipe-img"
+              alt=""
+            />
+            <h5>Kürtös kalács</h5>  
+          </a>
+          <!-- end of single recipe -->
+          <!-- single recipe -->
+          <a href="https://divany.hu/offline/2020/02/28/tokeletes-langos-recept/" class="recipe" target="_blank">
+            <img
+              src="https://kep.index.hu/1/0/3166/31669/316690/31669061_2430695_ab0a2cfa00e217e2a3c7041176b570f4_wm.jpg"
+              class="img recipe-img"
+              alt=""
+            />
+            <h5>Lángos</h5>  
+          </a>
+          <!-- end of single recipe -->
+          <!-- single recipe -->
+          <a href="https://www.nosalty.hu/recept/linzer-1" class="recipe" target="_blank">
+            <img
+              src="https://image-api.nosalty.hu/nosalty/images/recipes/Wd/u3/linzer-1.jpeg?w=640&h=360&fit=crop&s=666741ffa089f383e56da8ace4d9ed88"
+              class="img recipe-img"
+              alt=""
+            />
+            <h5>Linzer</h5>  
+          </a>
+          <!-- end of single recipe -->
+          <!-- single recipe -->
+          <a href="hhttps://www.mindmegette.hu/tejszines-madartejszelet.recept/" class="recipe" target="_blank">
+            <img
+              src="https://www.mindmegette.hu/images/176/O/madatej-szelet4.JPG"
+              class="img recipe-img"
+              alt=""
+            />
+            <h5>Madártej szelet</h5>  
+          </a>
+          <!-- end of single recipe -->
+          <!-- single recipe -->
+          <a href="https://www.mindmegette.hu/egyszeru-bogres-mikros-suti-nutellaval.recept/" class="recipe" target="_blank">
+            <img
+              src="https://www.mindmegette.hu/images/245/O/mikros2.jpg"
+              class="img recipe-img"
+              alt=""
+            />
+            <h5>Mikrós süti</h5>  
+          </a>
+          <!-- end of single recipe -->
+          <!-- single recipe -->
+          <a href="https://streetkitchen.hu/alapkeszitmenyek/a-legegyszerubb-tepertokrem/" class="recipe" target="_blank">
+            <img
+              src="https://image-api.nosalty.hu/nosalty/images/recipes/Xy/16/legegyszerubb-muffin.jpeg?w=640&h=480&fit=crop&s=e8723318b5f7b9be48652c5e42bb9a21"
+              class="img recipe-img"
+              alt=""
+            />
+            <h5>Muffin</h5>  
+          </a>
+          <!-- end of single recipe -->
+          <!-- single recipe -->
+          <a href="https://egyszerugyorsreceptek.com/nap-es-ej-szelet-egy-nagyon-egyszeru-es-nagyon-finom-sutemeny-ha-gyors-edessegre-vagysz/" class="recipe" target="_blank">
+            <img
+              src="https://egyszerugyorsreceptek.com/wp-content/uploads/2018/02/Nap_-es-_ej_szelet.jpg"
+              class="img recipe-img"
+              alt=""
+            />
+            <h5>Nap és éj</h5>  
+          </a>
+          <!-- end of single recipe -->
+          <!-- single recipe -->
+          <a href="https://receptneked.hu/kreativ-receptek/nutellas-napraforgo-kalacs/" class="recipe" target="_blank">
+            <img
+              src="https://receptneked.hu/wp-content/uploads/2018/05/Nutellu00e1s-napraforgu00f3-kalu00e1cs.jpg"
+              class="img recipe-img"
+              alt=""
+            />
+            <h5>Napraforgó sütemény</h5>  
+          </a>
+          <!-- end of single recipe -->
+          <!-- single recipe -->
+          <a href="https://www.topreceptek.hu/recept/piskotas-csokolades-mogyoros-ozgerinc-sutemeny-r288" class="recipe" target="_blank">
+            <img
+              src="https://www.topreceptek.hu/upload/00337114_2d2f0fea427385_full.jpg"
+              class="img recipe-img"
+              alt=""
+            />
+            <h5>Őzgerinc</h5>  
+          </a>
+          <!-- end of single recipe -->
+          <!-- single recipe -->
+          <a href="https://www.mindmegette.hu/csokikremes-palacsinta.recept/" class="recipe" target="_blank">
+            <img
+              src="https://www.mindmegette.hu/images/181/O/palacsinta_csokikrem.jpg"
+              class="img recipe-img"
+              alt=""
+            />
+            <h5>Palacsinta</h5>  
+          </a>
+          <!-- end of single recipe -->
+          <!-- single recipe -->
+          <a href="https://receptneked.hu/edes-sutemenyek/turos-sutik/paplan-suti/" class="recipe" target="_blank">
+            <img
+              src="https://receptneked.hu/wp-content/uploads/2014/11/1000_10929092_795560440510932_465030311543686445_n_20150122_083305-480x299.jpg"
+              class="img recipe-img"
+              alt=""
+            />
+            <h5>Paplan sütemény</h5>  
+          </a>
+          <!-- end of single recipe -->
+          <!-- single recipe -->
+          <a href="https://www.mindmegette.hu/piskota-csokiontettel.recept/" class="recipe" target="_blank">
+            <img
+              src="https://www.mindmegette.hu/images/186/O/csokispiskota.jpg"
+              class="img recipe-img"
+              alt=""
+            />
+            <h5>Piskóta forró csokival</h5>  
+          </a>
+          <!-- end of single recipe -->
+          <!-- single recipe -->
+          <a href="https://www.mindmegette.hu/egyszeru-piskotatekercs.recept/" class="recipe" target="_blank">
+            <img
+              src="https://www.mindmegette.hu/images/308/O/piskotatekercs.jpg"
+              class="img recipe-img"
+              alt=""
+            />
+            <h5>Piskóta tekercs</h5>  
+          </a>
+          <!-- end of single recipe -->
+          <!-- single recipe -->
+          <a href="https://hu.pinterest.com/pin/201254677086298933/" class="recipe" target="_blank">
+            <img
+              src="https://i.pinimg.com/originals/bd/72/45/bd7245bd19c2e264d811bb29ec5d6179.png"
+              class="img recipe-img"
+              alt=""
+            />
+            <h5>Pizzás-szalámis mnicsiga</h5>  
+          </a>
+          <!-- end of single recipe -->
+          <!-- single recipe -->
+          <a href="https://receptneked.hu/sos-sutemenyek/pihe-puha-pogacsa/" class="recipe" target="_blank">
+            <img
+              src="https://receptneked.hu/wp-content/uploads/2014/06/Pihe-puha-pog%C3%A1csa.jpg"
+              class="img recipe-img"
+              alt=""
+            />
+            <h5>Pogácsa</h5>  
+          </a>
+          <!-- end of single recipe -->
+          <!-- single recipe -->
+          <a href="https://www.nosalty.hu/recept/pudingos-tejfolos-szelet-gizitol" class="recipe" target="_blank">
+            <img
+              src="https://image-api.nosalty.hu/nosalty/images/recipes/iQ/88/pudingos-tejfolos-szelet-gizitol.jpeg?w=640&h=360&fit=crop&s=f65062d2ddd2f893f0f49b568d0a0317"
+              class="img recipe-img"
+              alt=""
+            />
+            <h5>Pudingos szelet</h5>  
+          </a>
+          <!-- end of single recipe -->
+          <!-- single recipe -->
+          <a href="https://cookpad.com/hu/receptek/10281589-ropogos-sajtos-rud" class="recipe" target="_blank">
+            <img
+              src="https://img-global.cpcdn.com/recipes/4d34ca92970cd039/1200x630cq70/photo.jpg"
+              class="img recipe-img"
+              alt=""
+            />
+            <h5>Ropogós sajtosrúd</h5>  
+          </a>
+          <!-- end of single recipe -->
+          <!-- single recipe -->
+          <a href="https://receptneked.hu/sos-sutemenyek/pihe-puha-pogacsa/" class="recipe" target="_blank">
+            <img
+              src="https://image-api.nosalty.hu/nosalty/images/recipes/bB/JD/sajtos-vajas-kifli.jpeg?w=640&h=640&fit=crop&s=1c7598641f1cdb23634dec501a458892"
+              class="img recipe-img"
+              alt=""
+            />
+            <h5>Sajtos kifli</h5>  
+          </a>
+          <!-- end of single recipe -->
+          <!-- single recipe -->
+          <a href="https://www.nosalty.hu/recept/habkonnyu-sajtos-rolo" class="recipe" target="_blank">
+            <img
+              src="https://image-api.nosalty.hu/nosalty/images/recipes/f3/UZ/habkonnyu-sajtos-rolo.jpeg?w=640&h=640&fit=crop&s=9f1f1296f062e006ed34105872c5528a"
+              class="img recipe-img"
+              alt=""
+            />
+            <h5>Sajtos rolló</h5>  
+          </a>
+          <!-- end of single recipe -->
+          <!-- single recipe -->
+          <a href="https://www.nosalty.hu/recept/legegyszerubb-sajtos-rud" class="recipe" target="_blank">
+            <img
+              src="https://image-api.nosalty.hu/nosalty/images/recipes/Q5/FT/legegyszerubb-sajtos-rud.jpeg?w=640&h=640&fit=crop&s=f25d152c3e94f16eed7321b99ebf235d"
+              class="img recipe-img"
+              alt=""
+            />
+            <h5>Sajtos rúd</h5>  
+          </a>
+          <!-- end of single recipe -->
+          <!-- single recipe -->
+          <a href="https://www.mindmegette.hu/sajtos-perec-aprosutemeny.recept/" class="recipe" target="_blank">
+            <img
+              src="https://www.mindmegette.hu/images/253/O/crop_201905291210_35293_sajtos-perec-aprosutemeny_n-201510170830.jpg"
+              class="img recipe-img"
+              alt=""
+            />
+            <h5>Sajtos sós perec</h5>  
+          </a>
+          <!-- end of single recipe -->
+          <!-- single recipe -->
+          <a href="https://www.nosalty.hu/recept/sajtos-taller-ahogy-limia-kesziti" class="recipe" target="_blank">
+            <img
+              src="https://image-api.nosalty.hu/nosalty/images/recipes/Wj/Hv/sajtos-taller-ahogy-limia-kesziti.jpeg?w=640&h=360&fit=crop&s=e4ae3de055915d3e7c38f4f2ac58b67f"
+              class="img recipe-img"
+              alt=""
+            />
+            <h5>Sajtos tallér</h5>  
+          </a>
+          <!-- end of single recipe -->
+          <!-- single recipe -->
+          <a href="https://cookpad.com/hu/receptek/13036210-somloi-galuska-szenhidrat-csokkentett" class="recipe" target="_blank">
+            <img
+              src="https://img-global.cpcdn.com/recipes/31fc7a2624b2ee99/1200x630cq70/photo.jpg"
+              class="img recipe-img"
+              alt=""
+            />
+            <h5>Somlói galuska</h5>  
+          </a>
+          <!-- end of single recipe -->
+          <!-- single recipe -->
+          <a href="https://www.nosalty.hu/recept/sport-szelet-3" class="recipe" target="_blank">
+            <img
+              src="https://image-api.nosalty.hu/nosalty/images/recipes/cs/99/sport-szelet-3.jpeg?w=640&h=640&fit=crop&s=7a1955ff5070d352a1d274c836481749"
+              class="img recipe-img"
+              alt=""
+            />
+            <h5>Sport szelet</h5>  
+          </a>
+          <!-- end of single recipe -->
+          <!-- single recipe -->
+          <a href="https://sobors.hu/receptek/tiramisu-tojas-nelkul-recept/" class="recipe" target="_blank">
+            <img
+              src="https://kep.index.hu/1/0/3872/38724/387244/38724421_2953953_9d69b005425fa8fb1773771cdeee4f76_wm.jpg"
+              class="img recipe-img"
+              alt=""
+            />
+            <h5>Tiramisu</h5>  
+          </a>
+          <!-- end of single recipe -->
+          <!-- single recipe -->
+          <a href="https://www.mindmegette.hu/sajtos-turos-rud.recept/" class="recipe" target="_blank">
+            <img
+              src="https://www.mindmegette.hu/images/198/O/crop_201707211811_sajtosrud.jpg"
+              class="img recipe-img"
+              alt=""
+            />
+            <h5>Túrós-Sajtos</h5>  
+          </a>
+          <!-- end of single recipe -->
+          <!-- single recipe -->
+          <a href="https://www.nosalty.hu/recept/csokis-vanilias-karika" class="recipe" target="_blank">
+            <img
+              src="https://image-api.nosalty.hu/nosalty/images/recipes/gD/qi/csokis-vanilias-karika.jpeg?w=640&h=360&fit=crop&s=c74d048616864b5aac2ae6351981d500"
+              class="img recipe-img"
+              alt=""
+            />
+            <h5>vaniliás karika recept</h5>  
+          </a>
+          <!-- end of single recipe -->
+          <!-- single recipe -->
+          <a href="https://www.youtube.com/watch?v=ct1qELSyQiM" class="recipe" target="_blank">
+            <img
+              src="https://i.ytimg.com/vi/ct1qELSyQiM/maxresdefault.jpg"
+              class="img recipe-img"
+              alt=""
+            />
+            <h5>Vendégváró süti</h5>  
+          </a>
+          <!-- end of single recipe -->
+          <!-- single recipe -->
+          <a href="https://www.nosalty.hu/recept/hagyomanyos-zserbo-viciko-konyhajabol" class="recipe" target="_blank">
+            <img
+              src="https://image-api.nosalty.hu/nosalty/images/recipes/CE/J9/hagyomanyos-zserbo-viciko-konyhajabol.jpeg?w=640&h=360&fit=crop&s=61300960afb01b24ba7b401d45d05f25"
+              class="img recipe-img"
+              alt=""
+            />
+            <h5>Zserbó</h5>  
+          </a>
+          <!-- end of single recipe -->
+        </div>
+        <!-- end of recipe list -->
+      </div>
+          
+    </main>
+    <!-- footer -->
+    <footer class="page-footer">
+      <p>
+        &copy; <span id="date"></span>
+        <span class="footer-logo">Egyszerű Receptek</span>
+        
+      </p>
+    </footer>
+    <script src="../js/app.js"></script>
+  </body>
+</html>

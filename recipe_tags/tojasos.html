@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tojásos</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="../Icon/favicon.ico" type="image/x-icon" />
+    <!-- normalize -->
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <script src="../js/script.js" defer></script>
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <!-- main css -->
+    <link rel="stylesheet" href="../css/main.css" />
+  </head>
+  <body>
+    <!-- nav  -->
+    <nav class="navbar">
+      <div class="nav-center">
+        <div class="nav-header">
+          <a href="../index.html" class="nav-logo">
+            <img src="../Icon/egyszeru_receptek_nav_logo.png" alt="simply recipes" />
+          </a>
+          <button class="nav-btn btn">
+            <i class="fas fa-align-justify"></i>
+          </button>
+        </div>
+        <div class="nav-links">
+          <a href="../index.html" class="nav-link"> home </a>
+          <a href="../tags.html" class="nav-link"> címkék </a>
+          <div class="search-wrapper">
+            <label for="search">Keresés</label>
+            <input type="search" id="search" placeholder="recept keresése" oninput="search()">
+          </div>
+
+          <div class="nav-link contact-link">
+            <button id="veletlen" class="btn"> Véletlen Tojásos recept </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- end of nav -->
+    <main class="page">
+      <div class="featured-recipes">
+        <a href="tojasos.html"><h4>Tojásos</h4></a>
+          <!-- recipes list -->
+        <div class="recipes-list" id="recipe-list">
+         <!-- single recipe -->
+         <a href="https://cafedelites.com/breakfast-casserole/" class="recipe" target="_blank">
+          <img
+            src="./assets/recipes/recipe-7.jpeg"
+            class="img recipe-img"
+            alt=""
+          />
+          <h5>Tojásos Ragu</h5>
+            <p>Breakfast Casserole</p>
+          
+        </a>
+        <!-- end of single recipe -->
+        <!-- single recipe -->
+        <a href="https://www.nosalty.hu/recept/alap-tojaskrem" class="recipe" target="_blank">
+          <img
+            src="https://image-api.nosalty.hu/nosalty/images/recipes/5U/wJ/alap-tojaskrem.jpeg?w=640&h=360&fit=crop&s=0873179a47fb30f19a601529459cf755"
+            class="img recipe-img"
+            alt=""
+          />
+          <h5>Alap Tojáskrém</h5>  
+        </a>
+        <!-- end of single recipe -->
+        <!-- single recipe -->
+        <a href="https://www.mindmegette.hu/boseges-fogas-ami-estig-eltelit-a-tokeletes-angol-reggeli-titka-49820/" class="recipe" target="_blank">
+          <img
+            src="https://kep.index.hu/1/0/3123/31235/312350/31235053_489c1e89cb76922152f914b48b7f1ac7_wm.jpg"
+            class="img recipe-img"
+            alt=""
+          />
+          <h5>Angol reggeli</h5>  
+        </a>
+        <!-- end of single recipe -->
+        <!-- single recipe -->
+        <a href="https://www.youtube.com/watch?v=8SnVAq1Nf8w&list=PLwAdRmP0Ovd_UyUq8FdJLhX-1hI743ETo&index=3" class="recipe" target="_blank">
+          <img
+            src="https://image-api.nosalty.hu/nosalty/images/recipes/Ng/fO/baconos-sajtos-roszti.jpeg?w=640&h=480&fit=crop&s=692e42b35752d5b2cd0c2ebe5756031f"
+            class="img recipe-img"
+            alt=""
+          />
+          <h5>Baconos röszti rántottával</h5>  
+        </a>
+        <!-- end of single recipe -->
+        <!-- single recipe -->
+        <a href="../recipe_pix/bundaskenyer.JPG" class="recipe" target="_blank">
+          <img
+            src="../recipes/reggeli/bundaskenyer.html"
+            class="img recipe-img"
+            alt=""
+          />
+          <h5>Bundáskenyér</h5>  
+        </a>
+        <!-- end of single recipe -->
+        <!-- single recipe -->
+        <a href="https://streetkitchen.hu/a-legjobb-reggelik/bundaskenyer-szendvics/" class="recipe" target="_blank">
+          <img
+            src="https://streetkitchen.hu/wp-content/uploads/2019/02/bundakenyer_szendvics_talalasa.jpg"
+            class="img recipe-img"
+            alt=""
+          />
+          <h5>Bundáskenyér szendvics</h5>  
+        </a>
+        <!-- end of single recipe -->
+        <!-- single recipe -->
+        <a href="https://www.mindmegette.hu/buggyantott-tojas-piritossal.recept/" class="recipe" target="_blank">
+          <img
+            src="http://kep.cdn.indexvas.hu/1/0/1578/15780/157803/15780359_254691484ed0ac99bcd7c9db230613ec_wm.jpg"
+            class="img recipe-img"
+            alt=""
+          />
+          <h5>Buggyantott tojás pirítóssal</h5>  
+        </a>
+        <!-- end of single recipe -->
+        <!-- single recipe -->
+        <a href="https://www.youtube.com/watch?v=7Xh2AR5gYgw" class="recipe" target="_blank">
+          <img
+            src="https://jajabakes.com/wp-content/uploads/2019/05/egg-mayo-sandwich-2-720x720.jpg"
+            class="img recipe-img"
+            alt=""
+          />
+          <h5>Egg-Mayo Sandwich</h5>  
+        </a>
+        <!-- end of single recipe -->
+        <!-- single recipe -->
+        <a href="https://www.nosalty.hu/recept/hagymas-rantotta" class="recipe" target="_blank">
+          <img
+            src="https://muffin.eoldal.hu/img/picture/1/rantotta.jpeg"
+            class="img recipe-img"
+            alt=""
+          />
+          <h5>Hagymás rántotta</h5>  
+        </a>
+        <!-- end of single recipe -->
+        <!-- single recipe -->
+        <a href="https://www.nosalty.hu/recept/lilahagymas-tojaskrem" class="recipe" target="_blank">
+          <img
+            src="https://i.pinimg.com/736x/a9/b0/f6/a9b0f6042ceba7c430468b88b5371254.jpg"
+            class="img recipe-img"
+            alt=""
+          />
+          <h5>Lilahagymás tojáskrém</h5>  
+        </a>
+        <!-- end of single recipe -->
+        <!-- single recipe -->
+        <a href="../recipes/reggeli/omlett.html" class="recipe" target="_blank">
+          <img
+            src="../recipe_pix/omlett.JPG"
+            class="img recipe-img"
+            alt=""
+          />
+          <h5>Omlett</h5>  
+        </a>
+        <!-- end of single recipe -->
+        <!-- single recipe -->
+        <a href="https://www.youtube.com/watch?v=-0y8uL_ziwA" class="recipe" target="_blank">
+          <img
+            src="https://i.ytimg.com/vi/-0y8uL_ziwA/hqdefault.jpg"
+            class="img recipe-img"
+            alt=""
+          />
+          <h5>Parasztreggeli</h5>  
+        </a>
+        <!-- end of single recipe -->
+        <!-- single recipe -->
+        <a href="https://www.mindmegette.hu/a-tokeletes-rantotta-8-titka-52255/" class="recipe" target="_blank">
+          <img
+            src="https://kep.cdn.index.hu/1/0/3109/31097/310976/31097601_2387821_32121d0902c0ffd823666427be0d1ac6_wm.jpg"
+            class="img recipe-img"
+            alt=""
+          />
+          <h5>Rántotta</h5>  
+        </a>
+        <!-- end of single recipe -->
+        <!-- single recipe -->
+        <a href="https://www.youtube.com/watch?v=zW8TyC9s3Kg&list=PLwAdRmP0Ovd_UyUq8FdJLhX-1hI743ETo&index=8" class="recipe" target="_blank">
+          <img
+            src="https://sajtbisztro.hu/wp-content/uploads/2018/06/sajtos-omlett.jpg"
+            class="img recipe-img"
+            alt=""
+          />
+          <h5>Sajtos Omlett</h5>  
+        </a>
+        <!-- end of single recipe -->
+        <!-- single recipe -->
+        <a href="https://www.youtube.com/watch?v=ne15z0z8yUg" class="recipe" target="_blank">
+          <img
+            src="https://s1.dmcdn.net/v/L1zGC1PRq6ZtueDK2/x1080"
+            class="img recipe-img"
+            alt=""
+          />
+          <h5>Spanish omlette sandwich style</h5>  
+        </a>
+        <!-- end of single recipe -->
+         <!-- single recipe -->
+         <a href="https://www.nosalty.hu/recept/szalonnas-tojasrantotta" class="recipe" target="_blank">
+          <img
+            src="https://kemenytojas.com/wp-content/uploads/szalonnas-kolbaszos-rantotta.jpg"
+            class="img recipe-img"
+            alt=""
+          />
+          <h5>Szalonnás Tojásrántotta</h5>  
+        </a>
+        <!-- end of single recipe -->
+        <!-- single recipe -->
+        <a href="https://streetkitchen.hu/basic/tukortojas-sutese/" class="recipe" target="_blank">
+          <img
+            src="https://streetkitchen.hu/wp-content/uploads/2022/04/shutterstock-679450408-1618x855.jpg"
+            class="img recipe-img"
+            alt=""
+          />
+          <h5>Tükörtojás</h5>  
+        </a>
+        <!-- end of single recipe -->
+        <!-- single recipe -->
+        <a href="https://cookpad.com/hu/receptek/15834960-tortillas-reggeli?ref=search&search_term=reggeli" class="recipe" target="_blank">
+          <img
+            src="https://img-global.cpcdn.com/recipes/7d6c2eee8159c7c6/1200x630cq70/photo.jpg"
+            class="img recipe-img"
+            alt=""
+          />
+          <h5>Sajtos Tojásos Tortilla</h5>  
+        </a>
+        <!-- end of single recipe -->
+        <!-- single recipe -->
+        <a href="https://cookpad.com/hu/receptek/6360683-sonkas-sajtos-tukortojasos-szendvics" class="recipe" target="_blank">
+          <img
+            src="https://img-global.cpcdn.com/recipes/c86fe8e32b056747/680x482cq70/sonkas-sajtos-tukortojasos-szendvics-recept-foto.jpg"
+            class="img recipe-img"
+            alt=""
+          />
+          <h5>Tükörtojásos sonkás kenyér</h5>  
+        </a>
+        <!-- end of single recipe -->
+        
+        </div>
+        <!-- end of recipe list -->
+      </div>
+          
+    </main>
+    <!-- footer -->
+    <footer class="page-footer">
+      <p>
+        &copy; <span id="date"></span>
+        <span class="footer-logo">Egyszerű Receptek</span>
+        
+      </p>
+    </footer>
+    <script src="../js/app.js"></script>
+  </body>
+</html>

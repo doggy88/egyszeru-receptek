@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Olasz</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="../Icon/favicon.ico" type="image/x-icon" />
+    <!-- normalize -->
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <script src="../js/script.js" defer></script>
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <!-- main css -->
+    <link rel="stylesheet" href="../css/main.css" />
+  </head>
+  <body>
+    <!-- nav  -->
+    <nav class="navbar">
+      <div class="nav-center">
+        <div class="nav-header">
+          <a href="../index.html" class="nav-logo">
+            <img src="../Icon/egyszeru_receptek_nav_logo.png" alt="simply recipes" />
+          </a>
+          <button class="nav-btn btn">
+            <i class="fas fa-align-justify"></i>
+          </button>
+        </div>
+        <div class="nav-links">
+          <a href="../index.html" class="nav-link"> home </a>
+          <a href="../tags.html" class="nav-link"> címkék </a>
+          <div class="search-wrapper">
+            <label for="search">Keresés</label>
+            <input type="search" id="search" placeholder="recept keresése" oninput="search()">
+          </div>
+
+          <div class="nav-link contact-link">
+            <button id="veletlen" class="btn"> Véletlen Olasz recept </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- end of nav -->
+    <main class="page">
+      <div class="featured-recipes">
+        <a href="olasz.html"><h4>Olasz</h4></a>
+          <!-- recipes list -->
+        <div class="recipes-list" id="recipe-list">
+           <!-- single recipe -->
+          <a href="https://www.youtube.com/watch?v=5ZlV8SpCuZg" class="recipe" target="_blank">
+            <img
+              src="https://image-api.nosalty.hu/nosalty/images/recipes/is/qs/bazsalikomos-rakott-teszta.jpeg?w=640&h=360&fit=crop&s=74684822206cb2d22e8bbe1cc66ee528"
+              class="img recipe-img"
+              alt=""
+            />
+            <h5>Bazsalikomos Rakott tészta</h5>
+            
+          </a>
+          <!-- end of single recipe -->
+          <!-- single recipe -->
+          <a href="https://www.nosalty.hu/recept/gyors-bolognai-spagetti" class="recipe" target="_blank">
+            <img
+              src="https://kep.index.hu/1/0/1857/18576/185761/18576197_91d66836f8ae3f34f89ef57ab92f2b9e_wm.jpg"
+              class="img recipe-img"
+              alt=""
+            />
+            <h5>Bolognai Spagetti</h5>
+            
+          </a>
+          <!-- end of single recipe -->
+            <!-- single recipe -->
+
+          <a href="https://www.nosalty.hu/recept/legegyszerubb-spaghetti-alla-carbonara" class="recipe" target="_blank">
+            <img
+              src="https://www.mindmegette.hu/images/214/O/carbonara.jpg"
+              class="img recipe-img"
+              alt=""
+            />
+            <h5>Carbonara spagetti</h5>
+            
+          </a>
+          <!-- end of single recipe -->
+          <!-- single recipe -->
+          <a href="https://www.nosalty.hu/recept/feherboros-csirkes-gombas-rizotto" class="recipe" target="_blank">
+            <img
+              src="https://kep.index.hu/1/0/3189/31897/318974/31897409_0f801924bd43ca7ae01cb3b708dbda78_wm.jpg"
+              class="img recipe-img"
+              alt=""
+            />
+            <h5>Csirkés Rizottó gombával</h5>
+            
+          </a>
+          <!-- end of single recipe -->
+          <!-- single recipe -->
+          <a href="https://www.nosalty.hu/recept/csirkes-tejszines-penne" class="recipe" target="_blank">
+            <img
+              src="https://www.mindmegette.hu/images/139/O/crop_201601311722_tejszinescsirkespenne.jpg"
+              class="img recipe-img"
+              alt=""
+            />
+            <h5>Csirkés-tejszínes penne</h5>
+            
+          </a>
+          <!-- end of single recipe -->
+          <!-- single recipe -->
+          <a href="http://www.mindmegette.hu/edesburgonyas-gnocchi.recept/" class="recipe" target="_blank">
+            <img
+              src="https://vegankalandor.hu/wp-content/uploads/2020/10/C5CB54DC-342C-43F1-97B1-1E7DE2A739A7-AAA01386-6BC9-4E5B-A6DA-9E6D82605C96-768x1024.jpg"
+              class="img recipe-img"
+              alt=""
+            />
+            <h5>Édesburgonyás gnocchi</h5>
+            
+          </a>
+          <!-- end of single recipe -->
+           <!-- single recipe -->
+           <a href="http://www.mindmegette.hu/fokhagymas-parmezanos-teszta-serpenyoben.recept/" class="recipe" target="_blank">
+            <img
+              src="https://www.nice.hu/upload/2021/Majus/parmezanos_teszta_1.jpg"
+              class="img recipe-img"
+              alt=""
+            />
+            <h5>Fokhagymás Parmezános tészta</h5>
+            
+          </a>
+          <!-- end of single recipe -->
+          <!-- single recipe -->
+          <a href="https://www.youtube.com/watch?v=NuOGVT4Ed0w" class="recipe" target="_blank">
+            <img
+              src="https://www.kitchenkonfidence.com/wp-content/uploads/2021/04/Gnocchi-with-Tomato-Sauce-4.jpg"
+              class="img recipe-img"
+              alt=""
+            />
+            <h5>Gnocchi with Tomato Sauce</h5>
+            
+          </a>
+          <!-- end of single recipe -->
+          <!-- single recipe -->
+          <a href="https://www.youtube.com/watch?v=SuqRisgZfrU" class="recipe" target="_blank">
+            <img
+              src="https://i.pinimg.com/originals/27/34/67/27346795f69d82381f94fbda0bd02483.jpg"
+              class="img recipe-img"
+              alt=""
+            />
+            <h5>Lasagne</h5>
+            
+          </a>
+          <!-- end of single recipe -->
+          <!-- single recipe -->
+          <a href="https://www.nosalty.hu/recept/retro-milanoi-makaroni" class="recipe" target="_blank">
+            <img
+              src="https://img-global.cpcdn.com/recipes/0ecdd57f8e7ff83b/680x482cq70/milanoi-makaroni-recept-foto.jpg"
+              class="img recipe-img"
+              alt=""
+            />
+            <h5>Milánói makaróni</h5>
+            
+          </a>
+          <!-- end of single recipe -->
+          <!-- single recipe -->
+          <a href="https://www.youtube.com/watch?v=HfgWufS9FSw" class="recipe" target="_blank">
+            <img
+              src="https://eztfozdki.blogstar.hu/pages/eztfozdki/contents/blog/49904/pics/lead_800x600.jpg"
+              class="img recipe-img"
+              alt=""
+            />
+            <h5>Olaszos-tejszínes gombaszósz spagettivel</h5>
+            
+          </a>
+          <!-- end of single recipe -->
+           <!-- single recipe -->
+           <a href="https://www.youtube.com/watch?v=MUi8znMQknU" class="recipe" target="_blank">
+            <img
+              src="https://kep.index.hu/1/0/4272/42729/427298/42729838_02960d478f6b83073d6964a0a8ab0e17_wm.jpg"
+              class="img recipe-img"
+              alt=""
+            />
+            <h5>Paradicsom szószos bazsalikomos tészta békönnel</h5>
+            
+          </a>
+          <!-- end of single recipe -->
+           <!-- single recipe -->
+           <a href="https://www.youtube.com/watch?v=NgJ0knMHg8k" class="recipe" target="_blank">
+            <img
+              src="https://konyhanyelven.hu/wp-content/uploads/2018/11/11_12_jancsa_jani_1.jpg"
+              class="img recipe-img"
+              alt=""
+            />
+            <h5>Pizza</h5>
+            
+          </a>
+          <!-- end of single recipe -->
+          <!-- single recipe -->
+          <a href="https://www.nosalty.hu/recept/sonkas-hagymas-tojasos-rakott-teszta" class="recipe" target="_blank">
+            <img
+              src="https://receptek365.info/wp-content/uploads/2019/10/sonkas-rakott-teszta-nagyon-izletes-510x287.jpg"
+              class="img recipe-img"
+              alt=""
+            />
+            <h5>Sonkás-hagymás-tojásos rakott tészta</h5>
+            
+          </a>
+          <!-- end of single recipe -->
+          <!-- single recipe -->
+          <a href="https://youtu.be/FdXKcMC2IpU?t=183" class="recipe" target="_blank">
+            <img
+              src="https://img.taste.com.au/kmT_aJW8/taste/2016/11/spaghetti-with-tuna-sauce-13068-1.jpeg"
+              class="img recipe-img"
+              alt=""
+            />
+            <h5>Spaghetti Tuna & Tomato Sauce</h5>
+            
+          </a>
+          <!-- end of single recipe -->
+          <!-- single recipe -->
+          <a href="https://www.youtube.com/watch?v=eCOKukbCaXs" class="recipe" target="_blank">
+            <img
+              src="http://mentalfitnessguru.hu/wp-content/uploads/2019/03/vega-lasagne.jpg"
+              class="img recipe-img"
+              alt=""
+            />
+            <h5>Vega Lasagne</h5>
+            
+          </a>
+          <!-- end of single recipe -->
+
+        </div>
+        <!-- end of recipe list -->
+      </div>
+          
+    </main>
+    <!-- footer -->
+    <footer class="page-footer">
+      <p>
+        &copy; <span id="date"></span>
+        <span class="footer-logo">Egyszerű Receptek</span>
+        
+      </p>
+    </footer>
+    <script src="../js/app.js"></script>
+  </body>
+</html>

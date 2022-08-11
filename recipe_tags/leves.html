@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Levesek</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="../Icon/favicon.ico" type="image/x-icon" />
+    <!-- normalize -->
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <script src="../js/script.js" defer></script>
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <!-- main css -->
+    <link rel="stylesheet" href="../css/main.css" />
+  </head>
+  <body>
+    <!-- nav  -->
+    <nav class="navbar">
+      <div class="nav-center">
+        <div class="nav-header">
+          <a href="../index.html" class="nav-logo">
+            <img src="../Icon/egyszeru_receptek_nav_logo.png" alt="simply recipes" />
+          </a>
+          <button class="nav-btn btn">
+            <i class="fas fa-align-justify"></i>
+          </button>
+        </div>
+        <div class="nav-links">
+          <a href="../index.html" class="nav-link"> home </a>
+          <a href="../tags.html" class="nav-link"> címkék </a>
+          <div class="search-wrapper">
+            <label for="search">Keresés</label>
+            <input type="search" id="search" placeholder="recept keresése" oninput="search()">
+          </div>
+
+          <div class="nav-link contact-link">
+            <button id="veletlen" class="btn"> Véletlen Leves </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- end of nav -->
+    <main class="page">
+      <div class="featured-recipes">
+        <a href="leves.html"><h4>Levesek</h4></a>
+          <!-- recipes list -->
+        <div class="recipes-list" id="recipe-list">
+          <!-- single recipe -->
+          <a href="https://www.youtube.com/watch?v=3TcAyFS_nZc" class="recipe" target="_blank">
+            <img
+              src="https://receptneked.hu/wp-content/uploads/2020/11/kajako%CC%81ma-szarvas-bab2-2-480x299.jpg?v=1605021136"
+              class="img recipe-img"
+              alt=""
+            />
+            <h5>Babgulyás</h5>
+            
+          </a>
+          <!-- end of single recipe -->
+          <!-- single recipe -->
+          <a href="https://www.youtube.com/watch?v=01k4dKXn8bs" class="recipe" target="_blank">
+            <img
+              src="https://kep.index.hu/1/0/3735/37350/373505/37350531_a6dd4e74f34018f9d95d183a3262ee0e_wm.jpg"
+              class="img recipe-img"
+              alt=""
+            />
+            <h5>Bableves</h5>
+            
+          </a>
+          <!-- end of single recipe -->
+          <!-- single recipe -->
+          <a href="https://www.youtube.com/watch?v=rm3cwdaScFo" class="recipe" target="_blank">
+            <img
+              src="https://img-global.cpcdn.com/recipes/edbfca45fd5b4d36/1200x630cq70/photo.jpg"
+              class="img recipe-img"
+              alt=""
+            />
+            <h5>Brokkolikrémleves</h5>
+            
+          </a>
+          <!-- end of single recipe -->
+          <!-- single recipe -->
+          <a href="https://www.youtube.com/watch?v=AOqxdSE36uU" class="recipe" target="_blank">
+            <img
+              src="https://static.toiimg.com/thumb/56018571.cms?width=1200&height=900"
+              class="img recipe-img"
+              alt=""
+            />
+            <h5>Carrot & Coriander Soup</h5>
+            
+          </a>
+          <!-- end of single recipe -->
+          <!-- single recipe -->
+          <a href="https://www.youtube.com/watch?v=oj5LbLzCLD4" class="recipe" target="_blank">
+            <img
+              src="https://img-global.cpcdn.com/recipes/9cbaa9c8fd19e65b/1200x630cq70/photo.jpg"
+              class="img recipe-img"
+              alt=""
+            />
+            <h5>Édesburgonya krémleves</h5>
+            
+          </a>
+          <!-- end of single recipe -->
+          <!-- single recipe -->
+          <a href="https://www.nosalty.hu/recept/izletes-fokhagymakremleves-sajtos-piritossal" class="recipe" target="_blank">
+            <img
+              src="https://image-api.nosalty.hu/nosalty/images/recipes/yv/jm/izletes-fokhagymakremleves-sajtos-piritossal.jpeg?w=640&h=480&fit=crop&s=dc5555d7ec394df6f87b809ca321543a"
+              class="img recipe-img"
+              alt=""
+            />
+            <h5>Fokhagymakrémleves</h5>
+            
+          </a>
+          <!-- end of single recipe -->
+          <!-- single recipe -->
+          <a href="https://www.youtube.com/watch?v=zQSgYkM70tc" class="recipe" target="_blank">
+            <img
+              src="https://kep.index.hu/1/0/2910/29100/291000/29100005_a4c3ea3363c06c5ca316b11594e0018c_wm.jpg"
+              class="img recipe-img"
+              alt=""
+            />
+            <h5>Gombakrémleves</h5>
+            
+          </a>
+          <!-- end of single recipe -->
+          <!-- single recipe -->
+          <a href="https://www.youtube.com/watch?v=eGbrjSXFli4" class="recipe" target="_blank">
+            <img
+              src="https://www.mindmegette.hu/images/26/O/34456_egyszeru-grizgaluskaleves_n-201510170815.jpg"
+              class="img recipe-img"
+              alt=""
+            />
+            <h5>Grízgombócleves</h5>
+            
+          </a>
+          <!-- end of single recipe -->
+          <!-- single recipe -->
+          <a href="https://www.nosalty.hu/recept/gulyasleves-1" class="recipe" target="_blank">
+            <img
+              src="https://www.mindmegette.hu/images/28/O/35995_gulyasleves_450-201510170842.jpg"
+              class="img recipe-img"
+              alt=""
+            />
+            <h5>Gulyásleves</h5>
+            
+          </a>
+          <!-- end of single recipe -->
+          <!-- single recipe -->
+          <a href="https://www.youtube.com/watch?v=qWgq1AtHrM4&t=0s" class="recipe" target="_blank">
+            <img
+              src="https://hajdu-horgasz.hu/wp-content/uploads/2016/06/DSCN34121.jpg"
+              class="img recipe-img"
+              alt=""
+            />
+            <h5>Halászlé</h5>
+            
+          </a>
+          <!-- end of single recipe -->
+          <!-- single recipe -->
+          <a href="https://www.youtube.com/watch?v=Qu7LAsIJb6E" class="recipe" target="_blank">
+            <img
+              src="https://www.mindmegette.hu/images/18/O/25756_zoldseges_husgombocleves_n-201510170605.jpg"
+              class="img recipe-img"
+              alt=""
+            />
+            <h5>Húsgombóc leves</h5>
+            
+          </a>
+          <!-- end of single recipe -->
+          <!-- single recipe -->
+          <a href="https://www.youtube.com/watch?v=bqkf24AeyHg" class="recipe" target="_blank">
+            <img
+              src="http://2.bp.blogspot.com/-R81ktYwMC9Y/VMd3TxmLyyI/AAAAAAAAFBw/RfbtTc3UoKc/s1600/P1200026.JPG"
+              class="img recipe-img"
+              alt=""
+            />
+            <h5>Húsleves</h5>
+            
+          </a>
+          <!-- end of single recipe -->
+          <!-- single recipe -->
+          <a href="https://www.youtube.com/watch?v=br113e5gY6o" class="recipe" target="_blank">
+            <img
+              src="http://csaladireceptkonyv.hu/storage/images/recipes/50306.jpg"
+              class="img recipe-img"
+              alt=""
+            />
+            <h5>Jókai bableves</h5>
+            
+          </a>
+          <!-- end of single recipe -->
+          <!-- single recipe -->
+          <a href="https://www.youtube.com/watch?v=ygZDSwB8MCY" class="recipe" target="_blank">
+            <img
+              src="https://img-global.cpcdn.com/recipes/7bea25990ce47d2e/1200x630cq70/photo.jpg"
+              class="img recipe-img"
+              alt=""
+            />
+            <h5>Karfiolleves</h5>
+            
+          </a>
+          <!-- end of single recipe -->
+          <!-- single recipe -->
+          <a href="https://www.youtube.com/watch?v=8VpbO2qAceg" class="recipe" target="_blank">
+            <img
+              src="https://img-global.cpcdn.com/recipes/1e6343208eaeb136/1200x630cq70/photo.jpg"
+              class="img recipe-img"
+              alt=""
+            />
+            <h5>Kelbimbó leves</h5>
+            
+          </a>
+          <!-- end of single recipe -->
+          <!-- single recipe -->
+          <a href="https://www.nosalty.hu/recept/kerteszleves" class="recipe" target="_blank">
+            <img
+              src="https://image-api.nosalty.hu/nosalty/images/recipes/F4/JD/kerteszleves.jpeg?w=640&h=480&fit=crop&s=0eb0576835a1334618e65a71ed50ce53"
+              class="img recipe-img"
+              alt=""
+            />
+            <h5>Kertészleves</h5>
+            
+          </a>
+          <!-- end of single recipe -->
+          <!-- single recipe -->
+          <a href="https://www.youtube.com/watch?v=OggkvcfEwGI" class="recipe" target="_blank">
+            <img
+              src="https://kep.index.hu/1/0/2910/29100/291006/29100635_58f1195c3e2be378bcf9ce3aee9b398e_wm.jpg"
+              class="img recipe-img"
+              alt=""
+            />
+            <h5>Kínai leves</h5>
+            
+          </a>
+          <!-- end of single recipe -->
+          <!-- single recipe -->
+          <a href="https://www.youtube.com/watch?v=vtbat3fSZsQ" class="recipe" target="_blank">
+            <img
+              src="http://nagyikonyhatitkai.lapunk.hu/tarhely/nagyikonyhatitkai/kepek/201411/komenymagleves.jpg"
+              class="img recipe-img"
+              alt=""
+            />
+            <h5>Köményleves</h5>
+            
+          </a>
+          <!-- end of single recipe -->
+          <!-- single recipe -->
+          <a href="https://www.youtube.com/watch?v=571l3BwQAUk" class="recipe" target="_blank">
+            <img
+              src="https://www.mindmegette.hu/images/254/O/krumplileves-fekvo.jpg"
+              class="img recipe-img"
+              alt=""
+            />
+            <h5>Krumplileves</h5>
+            
+          </a>
+          <!-- end of single recipe -->
+          <!-- single recipe -->
+          <a href="https://www.youtube.com/watch?v=ZJ04vwOsl8Q" class="recipe" target="_blank">
+            <img
+              src="https://i0.wp.com/vajling.hu/wp-content/uploads/2020/06/e01bbe56-2f2b-4d0a-8910-fffec676b330.jpg?fit=1000%2C750&ssl=1"
+              class="img recipe-img"
+              alt=""
+            />
+            <h5>Lebbencsleves</h5>
+            
+          </a>
+          <!-- end of single recipe -->
+          <!-- single recipe -->
+          <a href="../recipes/leves/majgomboc_leves.html" class="recipe" target="_blank">
+            <img
+              src="../recipe_pix/majgomboc.JPG"
+              class="img recipe-img"
+              alt=""
+            />
+            <h5>Májgombócleves</h5>
+            
+          </a>
+          <!-- end of single recipe -->
+          <!-- single recipe -->
+          <a href="https://www.youtube.com/watch?v=LLHT6Z--lbM" class="recipe" target="_blank">
+            <img
+              src="https://img-global.cpcdn.com/recipes/886eac9939b57c0f/1200x630cq70/photo.jpg"
+              class="img recipe-img"
+              alt=""
+            />
+            <h5>Minestoneleves</h5>
+            
+          </a>
+          <!-- end of single recipe -->
+          <!-- single recipe -->
+          <a href="https://www.youtube.com/watch?v=aZKKd2vMVh4" class="recipe" target="_blank">
+            <img
+              src="https://img-global.cpcdn.com/recipes/999015fdc707cf7e/1200x630cq70/photo.jpg"
+              class="img recipe-img"
+              alt=""
+            />
+            <h5>Paradicsomleves</h5>
+            
+          </a>
+          <!-- end of single recipe -->
+          <!-- single recipe -->
+          <a href="https://www.youtube.com/watch?v=yPMrotxgzSI" class="recipe" target="_blank">
+            <img
+              src="https://kep.index.hu/1/0/1989/19896/198960/19896089_a11f41c00fdd7f575b64654344f2934d_wm.jpg"
+              class="img recipe-img"
+              alt=""
+            />
+            <h5>Spárgakrémleves</h5>
+            
+          </a>
+          <!-- end of single recipe -->
+          <!-- single recipe -->
+          <a href="https://www.youtube.com/watch?v=l4QkfKt5s60" class="recipe" target="_blank">
+            <img
+              src="https://img-global.cpcdn.com/recipes/77eb2c90c2256cef/400x400cq70/photo.jpg"
+              class="img recipe-img"
+              alt=""
+            />
+            <h5>Tarhonyaleves</h5>
+            
+          </a>
+          <!-- end of single recipe -->
+          <!-- single recipe -->
+          <a href="https://www.youtube.com/watch?v=YvUB7_VOeEI" class="recipe" target="_blank">
+            <img
+              src="https://csirkemell-receptek.hu/wp-content/uploads/2020/05/tarkonyos_raguleves_csirkemellbol.jpg"
+              class="img recipe-img"
+              alt=""
+            />
+            <h5>Tárkonyosraguleves</h5>
+            
+          </a>
+          <!-- end of single recipe -->
+          <!-- single recipe -->
+          <a href="https://www.youtube.com/watch?v=Xc7D1C0p8fw" class="recipe" target="_blank">
+            <img
+              src="https://cdn.penzcentrum.hu/images/content/202011/20-zellerkraOmleves.jpg"
+              class="img recipe-img"
+              alt=""
+            />
+            <h5>Zellerkrémleves</h5>
+            
+          </a>
+          <!-- end of single recipe -->
+          <!-- single recipe -->
+          <a href="https://www.youtube.com/watch?v=VTo8D999aY4" class="recipe" target="_blank">
+            <img
+              src="https://img-global.cpcdn.com/recipes/4200e60f2e4fe95d/1200x630cq70/photo.jpg"
+              class="img recipe-img"
+              alt=""
+            />
+            <h5>Zöldborsóleves</h5>
+            
+          </a>
+          <!-- end of single recipe -->
+          <!-- single recipe -->
+          <a href="https://www.youtube.com/watch?v=YpOEBXW4a4U" class="recipe" target="_blank">
+            <img
+              src="https://image-api.nosalty.hu/nosalty/images/recipes/Hi/5G/tavaszi-vegyes-zoldsegleves.jpeg?w=640&h=360&fit=crop&s=14f8cb2eee5dab49b9af18be0cbb6ec8"
+              class="img recipe-img"
+              alt=""
+            />
+            <h5>Zöldségleves</h5>
+            
+          </a>
+          <!-- end of single recipe -->
+        </div>
+        <!-- end of recipe list -->
+      </div>
+          
+    </main>
+    <!-- footer -->
+    <footer class="page-footer">
+      <p>
+        &copy; <span id="date"></span>
+        <span class="footer-logo">Egyszerű Receptek</span>
+        
+      </p>
+    </footer>
+    <script src="../js/app.js"></script>
+  </body>
+</html>

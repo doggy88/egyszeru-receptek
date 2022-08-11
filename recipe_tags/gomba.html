@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gomba</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="../Icon/favicon.ico" type="image/x-icon" />
+    <!-- normalize -->
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <script src="../js/script.js" defer></script>
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <!-- main css -->
+    <link rel="stylesheet" href="../css/main.css" />
+  </head>
+  <body>
+    <!-- nav  -->
+    <nav class="navbar">
+      <div class="nav-center">
+        <div class="nav-header">
+          <a href="../index.html" class="nav-logo">
+            <img src="../Icon/egyszeru_receptek_nav_logo.png" alt="simply recipes" />
+          </a>
+          <button class="nav-btn btn">
+            <i class="fas fa-align-justify"></i>
+          </button>
+        </div>
+        <div class="nav-links">
+          <a href="../index.html" class="nav-link"> home </a>
+          <a href="../tags.html" class="nav-link"> címkék </a>
+          <div class="search-wrapper">
+            <label for="search">Keresés</label>
+            <input type="search" id="search" placeholder="recept keresése" oninput="search()">
+          </div>
+
+          <div class="nav-link contact-link">
+            <button id="veletlen" class="btn"> Véletlen Gombás Recept </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- end of nav -->
+    <main class="page">
+      <div class="featured-recipes">
+        <a href="gomba.html"><h4>Gombás</h4></a>
+          <!-- recipes list -->
+        <div class="recipes-list" id="recipe-list">
+          <!-- single recipe -->
+          <a href="https://www.nosalty.hu/recept/feherboros-csirkes-gombas-rizotto" class="recipe" target="_blank">
+            <img
+              src="https://kep.index.hu/1/0/3189/31897/318974/31897409_0f801924bd43ca7ae01cb3b708dbda78_wm.jpg"
+              class="img recipe-img"
+              alt=""
+            />
+            <h5>Csirkés Rizottó gombával</h5>
+            
+          </a>
+          <!-- end of single recipe -->
+          <!-- single recipe -->
+          <a href="https://www.nosalty.hu/recept/tejfolos-gombaporkolt" class="recipe" target="_blank">
+            <img
+              src="https://image-api.nosalty.hu/nosalty/images/recipes/gL/bW/tejfolos-gombaporkolt.jpeg?w=640&h=640&fit=crop&s=84558f875c5ff1b938c280f781582735"
+              class="img recipe-img"
+              alt=""
+            />
+            <h5>Gombapörkölt</h5>
+            
+          </a>
+          <!-- end of single recipe -->
+          <!-- single recipe -->
+          <a href="https://www.nosalty.hu/recept/chicken-mushroom-cobbler" class="recipe" target="_blank">
+            <img
+              src="https://du7ybees82p4m.cloudfront.net/55d6fed6cc1f93.47920423.jpg?width=800&height=450"
+              class="img recipe-img"
+              alt=""
+            />
+            <h5>Gombás Csirke Batyu</h5>
+            <p>Chicken Mushroom cobbler</p>
+            
+          </a>
+          <!-- end of single recipe -->
+          <!-- single recipe -->
+          <a href="https://www.youtube.com/watch?v=FU_The50Kis" class="recipe" target="_blank">
+            <img
+              src="https://www.kitchensanctuary.com/wp-content/uploads/2019/02/Creamy-Chicken-and-mushroom-casserole-tall-FS.jpg"
+              class="img recipe-img"
+              alt=""
+            />
+            <h5>Gombás Csirke Ragu</h5>
+            <p>Chicken mushroom casserole</p>
+            
+          </a>
+          <!-- end of single recipe -->
+          <!-- single recipe -->
+          <a href="../recipes/ebed/gombas_sajtos_tepsis_hus.html" class="recipe" target="_blank">
+            <img
+              src="../recipe_pix/gombas_sajtos_tepsis_hus.JPG"
+              class="img recipe-img"
+              alt=""
+            />
+            <h5>Gombás-Sajtos tepsis hús</h5>
+            
+          </a>
+          <!-- end of single recipe -->
+          <!-- single recipe -->
+          <a href="https://www.youtube.com/watch?v=S3-5_7KmlhU" class="recipe" target="_blank">
+            <img
+              src="https://image-api.nosalty.hu/nosalty/images/recipes/L9/nH/bakonyi-sertesszelet-viciko-konyhajabol.jpeg?w=640&h=480&fit=crop&s=8f53563a85488347b5bfc09dc5a3703d"
+              class="img recipe-img"
+              alt=""
+            />
+            <h5>Gombás-Tejfölös sertés szelet galuskával</h5>
+            
+          </a>
+          <!-- end of single recipe -->
+          <!-- single recipe -->
+          <a href="https://www.youtube.com/watch?v=HfgWufS9FSw" class="recipe" target="_blank">
+            <img
+              src="https://eztfozdki.blogstar.hu/pages/eztfozdki/contents/blog/49904/pics/lead_800x600.jpg"
+              class="img recipe-img"
+              alt=""
+            />
+            <h5>Olaszos-tejszínes gombaszósz spagettivel</h5>
+            
+          </a>
+          <!-- end of single recipe -->
+          <!-- single recipe -->
+          <a href="https://www.youtube.com/watch?v=zQSgYkM70tc" class="recipe" target="_blank">
+            <img
+              src="https://kep.index.hu/1/0/2910/29100/291000/29100005_a4c3ea3363c06c5ca316b11594e0018c_wm.jpg"
+              class="img recipe-img"
+              alt=""
+            />
+            <h5>Gombakrémleves</h5>
+            
+          </a>
+          <!-- end of single recipe -->
+          <!-- single recipe -->
+          <a href="https://www.youtube.com/watch?v=156Cf9NPcy4" class="recipe" target="_blank">
+            <img
+              src="https://www.kitchensanctuary.com/wp-content/uploads/2019/03/Chicken-and-mushroom-pie-with-bacon-square-FS.jpg"
+              class="img recipe-img"
+              alt=""
+            />
+            <h5>Gombás-Csirkés Pite</h5>
+            <p>Mushroom chicken pie</p>
+            
+          </a>
+          <!-- end of single recipe -->
+          
+
+        </div>
+        <!-- end of recipe list -->
+      </div>
+          
+    </main>
+    <!-- footer -->
+    <footer class="page-footer">
+      <p>
+        &copy; <span id="date"></span>
+        <span class="footer-logo">Egyszerű Receptek</span>
+        
+      </p>
+    </footer>
+    <script src="../js/app.js"></script>
+  </body>
+</html>

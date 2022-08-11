@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Címkék</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./Icon/favicon.ico" type="image/x-icon" />
+    <!-- normalize -->
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <script src="./js/script_tag.js" defer></script>
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <!-- main css -->
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <!-- nav  -->
+    <nav class="navbar">
+      <div class="nav-center">
+        <div class="nav-header">
+          <a href="index.html" class="nav-logo">
+            <img src="./Icon/egyszeru_receptek_nav_logo.png" alt="simply recipes" />
+          </a>
+          <button class="nav-btn btn">
+            <i class="fas fa-align-justify"></i>
+          </button>
+        </div>
+        <div class="nav-links">
+          <a href="index.html" class="nav-link"> home </a>
+          <a href="tags.html" class="nav-link"> címkék </a>
+          <div class="search-wrapper">
+            <label for="search">Keresés</label>
+            <input type="search" id="search" placeholder="kategória keresése" oninput="search()">
+          </div>
+          <div class="nav-link contact-link">
+            <button id="veletlen" class="btn"> Véletlen Címke </button>
+          </div>
+          
+        </div>
+      </div>
+    </nav>
+    <!-- end of nav -->
+    <main class="page">
+      <section class="tags-wrapper" id="recipe-list">
+        <!-- single tag -->
+        <a href="./recipe_tags/angol.html" class="tag" id="recipe">
+          <h5>Angol</h5>
+          <p>15 recept</p>
+        </a>
+        <!-- end of single tag -->
+        <!-- single tag -->
+        <a href="./recipe_tags/amerikai.html" class="tag" id="recipe">
+          <h5>Amerikai</h5>
+          <p>7 recept</p>
+        </a>
+        <!-- end of single tag -->
+        <!-- single tag -->
+        <a href="./recipe_tags/csirke.html" class="tag" id="recipe">
+          <h5>Csirkés</h5>
+          <p>40 recept</p>
+        </a>
+        <!-- end of single tag -->
+        <!-- single tag -->
+        <a href="./recipe_tags/csipos.html" class="tag" id="recipe">
+          <h5>Csípős</h5>
+          <p>13 recept</p>
+        </a>
+        <!-- end of single tag -->
+        <!-- single tag -->
+        <a href="./recipe_tags/daralthus.html" class="tag" id="recipe">
+          <h5>Darálthús</h5>
+          <p>12 recept</p>
+        </a>
+        <!-- end of single tag -->
+        <!-- single tag -->
+        <a href="./recipe_tags/desszert.html" class="tag" id="recipe">
+          <h5>Desszert</h5>
+          <p>63 recept</p>
+        </a>
+        <!-- end of single tag -->
+        <!-- single tag -->
+        <a href="./recipe_tags/ebed.html" class="tag" id="recipe">
+          <h5>Ebéd</h5>
+          <p>125 recept</p>
+        </a>
+        <!-- end of single tag -->
+        <!-- single tag -->
+            <a href="./recipe_tags/fozelek.html" class="tag" id="recipe">
+              <h5>Főzelék</h5>
+              <p>1 recept</p>
+            </a>
+          <!-- end of single tag -->
+        <!-- single tag -->
+        <a href="./recipe_tags/gomba.html" class="tag" id="recipe">
+          <h5>Gombás</h5>
+          <p>6 recept</p>
+        </a>
+        <!-- end of single tag -->
+        <!-- single tag -->
+        <a href="./recipe_tags/halas.html" class="tag" id="recipe">
+          <h5>Halas</h5>
+          <p>5 recept</p>
+        </a>
+        <!-- end of single tag -->
+        <!-- single tag -->
+        <a href="./recipe_tags/indiai.html" class="tag" id="recipe">
+          <h5>Indiai</h5>
+          <p>5 recept</p>
+        </a>
+        <!-- end of single tag -->
+        <!-- single tag -->
+        <a href="./recipe_tags/kacsa.html" class="tag" id="recipe">
+          <h5>Kacsa</h5>
+          <p>1 recept</p>
+        </a>
+        <!-- end of single tag -->
+        <!-- single tag -->
+        <a href="./recipe_tags/kinai.html" class="tag" id="recipe">
+          <h5>Kínai</h5>
+          <p>15 recept</p>
+        </a>
+        <!-- end of single tag -->
+        <!-- single tag -->
+        <a href="./recipe_tags/krumplis.html" class="tag" id="recipe">
+          <h5>Krumplis</h5>
+          <p>12 recept</p>
+        </a>
+        <!-- end of single tag -->
+        <!-- single tag -->
+        <a href="./recipe_tags/leves.html" class="tag" id="recipe">
+          <h5>Levesek</h5>
+          <p>29 recept</p>
+        </a>
+        <!-- end of single tag -->
+        <!-- single tag -->
+        <a href="./recipe_tags/magyaros.html" class="tag" id="recipe">
+          <h5>Magyaros</h5>
+          <p>38 recept</p>
+        </a>
+        <!-- end of single tag -->
+        <!-- single tag -->
+        <a href="./recipe_tags/Marha.html" class="tag" id="recipe">
+          <h5>Marha</h5>
+          <p>8 recept</p>
+        </a>
+        <!-- end of single tag -->
+        <!-- single tag -->
+        <a href="./recipe_tags/mexikoi.html" class="tag" id="recipe">
+          <h5>Mexikói</h5>
+          <p>9 recept</p>
+        </a>
+        <!-- end of single tag -->
+        <!-- single tag -->
+        <a href="./recipe_tags/olasz.html" class="tag" id="recipe">
+          <h5>Olasz</h5>
+          <p>16 recept</p>
+        </a>
+        <!-- end of single tag -->
+        <!-- single tag -->
+        <a href="./recipe_tags/pulyka.html" class="tag" id="recipe">
+          <h5>Pulyka</h5>
+          <p>1 recept</p>
+        </a>
+        <!-- end of single tag -->
+        <!-- single tag -->
+        <a href="./recipe_tags/reggeli.html" class="tag" id="recipe">
+          <h5>Reggeli</h5>
+          <p>52 recept</p>
+        </a>
+      <!-- end of single tag -->
+        <!-- single tag -->
+        <a href="./recipe_tags/pork.html" class="tag" id="recipe">
+          <h5>Sertés</h5>
+          <p>41 recept</p>
+        </a>
+        <!-- end of single tag -->
+        <!-- single tag -->
+        <a href="./recipe_tags/szoszok_martasok.html" class="tag" id="recipe">
+          <h5>Szószok-mártások</h5>
+          <p>3 recept</p>
+        </a>
+        <!-- end of single tag -->
+        <!-- single tag -->
+        <a href="./recipe_tags/teszta.html" class="tag" id="recipe">
+          <h5>Tésztás</h5>
+          <p>29 recept</p>
+        </a>
+        <!-- end of single tag -->
+        
+        <!-- single tag -->
+        <a href="./recipe_tags/tojasos.html" class="tag" id="recipe">
+          <h5>Tojásos</h5>
+    <p>19 recept</p>
+  </a>
+  <!-- end of single tag -->
+  <!-- single tag -->
+        <a href="./recipe_tags/vegetarian.html" class="tag" id="recipe">
+          <h5>Vegetáriánus</h5>
+          <p>54 recept</p>
+        </a>
+      <!-- end of single tag -->
+</section>
+</main>
+<!-- footer -->
+    <footer class="page-footer">
+      <p>
+        &copy; <span id="date"></span>
+        <span class="footer-logo">Egyszerű Receptek</span>
+      
+      </p>
+    </footer>
+    <script src="./js/app.js"></script>
+  </body>
+</html>

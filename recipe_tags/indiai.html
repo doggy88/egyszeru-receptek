@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Indiai</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="../Icon/favicon.ico" type="image/x-icon" />
+    <!-- normalize -->
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <script src="../js/script.js" defer></script>
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <!-- main css -->
+    <link rel="stylesheet" href="../css/main.css" />
+  </head>
+  <body>
+    <!-- nav  -->
+    <nav class="navbar">
+      <div class="nav-center">
+        <div class="nav-header">
+          <a href="../index.html" class="nav-logo">
+            <img src="../Icon/egyszeru_receptek_nav_logo.png" alt="simply recipes" />
+          </a>
+          <button class="nav-btn btn">
+            <i class="fas fa-align-justify"></i>
+          </button>
+        </div>
+        <div class="nav-links">
+          <a href="../index.html" class="nav-link"> home </a>
+          <a href="../tags.html" class="nav-link"> címkék </a>
+          <div class="search-wrapper">
+            <label for="search">Keresés</label>
+            <input type="search" id="search" placeholder="recept keresése" oninput="search()">
+          </div>
+
+          <div class="nav-link contact-link">
+            <button id="veletlen" class="btn"> Véletlen Indiai recept </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- end of nav -->
+    <main class="page">
+      <div class="featured-recipes">
+        <a href="indiai.html"><h4>Indiai</h4></a>
+          <!-- recipes list -->
+        <div class="recipes-list" id="recipe-list">
+          <!-- single recipe -->
+          <a href="https://www.nosalty.hu/recept/curry-s-csirke-indiai-modon" class="recipe" target="_blank">
+            <img
+              src="https://www.kitchensanctuary.com/wp-content/uploads/2020/08/Easy-Chicken-Curry-square-FS-117.jpg"
+              class="img recipe-img"
+              alt=""
+            />
+            <h5>Csirkés Curry</h5>
+            
+          </a>
+          <!-- end of single recipe -->
+          <!-- single recipe -->
+          <a href="https://www.youtube.com/watch?v=KJ5HlyB5YoM" class="recipe" target="_blank">
+            <img
+              src="https://streetkitchen.hu/wp-content/uploads/2018/06/csirke-korma-01.jpg"
+              class="img recipe-img"
+              alt=""
+            />
+            <h5>Csirkés Korma</h5>
+            
+          </a>
+          <!-- end of single recipe -->
+           <!-- single recipe -->
+           <a href="https://www.youtube.com/watch?v=lnRmIKkGCIA" class="recipe" target="_blank">
+            <img
+              src="https://littlesunnykitchen.com/wp-content/uploads/Chicke-tikka-masala-2-7.jpg"
+              class="img recipe-img"
+              alt=""
+            />
+            <h5>Csirkés Tikka Masala</h5>
+            <p>Chicken Tikka Masala</p>
+            
+          </a>
+          <!-- end of single recipe -->
+           <!-- single recipe -->
+          <a href="../recipes/ebed/halas_curry.html" class="recipe" target="_blank">
+            <img
+              src="../recipe_pix/fish_curry.JPG"
+              class="img recipe-img"
+              alt=""
+            />
+            <h5>Halas Curry</h5>
+            <p>Fish Curry</p>
+            
+          </a>
+          <!-- end of single recipe -->
+           <!-- single recipe -->
+           <a href="vega_curry.html" class="recipe" target="_blank">
+            <img
+              src="https://image-api.nosalty.hu/nosalty/images/recipes/i6/XN/vega-korma-hamis-karfiol-pilaffal.jpeg?w=640&h=480&fit=crop&s=e4523433cc3cb9bc55af1009e4ab54ae"
+              class="img recipe-img"
+              alt=""
+            />
+            <h5>Vegetáriánus Curry</h5>
+            
+          </a>
+          <!-- end of single recipe -->
+
+
+        </div>
+        <!-- end of recipe list -->
+      </div>
+          
+    </main>
+    <!-- footer -->
+    <footer class="page-footer">
+      <p>
+        &copy; <span id="date"></span>
+        <span class="footer-logo">Egyszerű Receptek</span>
+        
+      </p>
+    </footer>
+    <script src="../js/app.js"></script>
+  </body>
+</html>
