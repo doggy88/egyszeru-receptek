@@ -867,3 +867,23 @@ img {
     animation-duration: 0.01ms !important;
   }
 }
+
+/* Dialog fallback for browsers without native showModal support */
+body.modal-open::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 90;
+  background: rgba(10, 23, 19, 0.68);
+  backdrop-filter: blur(8px);
+}
+
+.recipe-dialog[open] {
+  position: fixed;
+  inset: 50% auto auto 50%;
+  z-index: 100;
+  display: block;
+  max-height: min(90vh, 46rem);
+  margin: 0;
+  transform: translate(-50%, -50%);
+}
