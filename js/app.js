@@ -1,19 +1,25 @@
-const getElement = (selector) => {
-  const element = document.querySelector(selector)
+const navLinks = document.querySelector('.nav-links');
+const navButton = document.querySelector('.nav-btn');
 
-  if (element) return element
-  throw Error(
-    `Please double check your class names, there is no ${selector} class`
-  )
+if (navLinks && navButton) {
+  const setMenuState = (open) => {
+    navLinks.classList.toggle('show-links', open);
+    navButton.setAttribute('aria-expanded', String(open));
+    navButton.setAttribute('aria-label', open ? 'Menü bezárása' : 'Menü megnyitása');
+  };
+
+  navButton.addEventListener('click', () => {
+    setMenuState(!navLinks.classList.contains('show-links'));
+  });
+
+  navLinks.querySelectorAll('a').forEach((link) => {
+    link.addEventListener('click', () => setMenuState(false));
+  });
+
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape') setMenuState(false);
+  });
 }
 
-const links = getElement('.nav-links')
-const navBtnDOM = getElement('.nav-btn')
-
-navBtnDOM.addEventListener('click', () => {
-  links.classList.toggle('show-links')
-})
-
-const date = getElement('#date')
-const currentYear = new Date().getFullYear()
-date.textContent = currentYear
+const date = document.getElementById('date');
+if (date) date.textContent = new Date().getFullYear();
