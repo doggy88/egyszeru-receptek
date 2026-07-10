@@ -169,6 +169,7 @@
 
       button.addEventListener('click', () => {
         state.category = category;
+        state.query = searchInput.value;
         state.visible = PAGE_SIZE;
         render();
         document.getElementById('discovery').scrollIntoView({ behavior: 'smooth', block: 'start' });
@@ -269,15 +270,38 @@
     dialogSubtitle.textContent = recipe.subtitle || 'Egy véletlen ötlet a recepttárból.';
     configureLink(dialogLink, recipe);
 
-    document.body.classList.add('modal-open');
-    dialog.showModal();
+    showRecipeDialog();
   };
 
-  searchInput.addEventListener('input', () => {
+  const showRecipeDialog = () => {
+    document.body.classList.add('modal-open');
+    if (typeof dialog.showModal === 'function') {
+      dialog.showModal();
+    } else {
+      dialog.setAttribute('open', '');
+      dialog.setAttribute('aria-modal', 'true');
+    }
+  };
+
+  const closeRecipeDialog = () => {
+    if (typeof dialog.close === 'function') {
+      dialog.close();
+    } else {
+      dialog.removeAttribute('open');
+      dialog.removeAttribute('aria-modal');
+      document.body.classList.remove('modal-open');
+    }
+  };
+
+  const syncSearch = () => {
     state.query = searchInput.value;
     state.visible = PAGE_SIZE;
     renderRecipes();
-  });
+  };
+
+  searchInput.addEventListener('input', syncSearch);
+  searchInput.addEventListener('search', syncSearch);
+  searchInput.addEventListener('change', syncSearch);
 
   searchForm.addEventListener('submit', (event) => {
     event.preventDefault();
@@ -296,10 +320,10 @@
     button.addEventListener('click', openRandomRecipe);
   });
 
-  dialogClose.addEventListener('click', () => dialog.close());
+  dialogClose.addEventListener('click', closeRecipeDialog);
   dialog.addEventListener('close', () => document.body.classList.remove('modal-open'));
   dialog.addEventListener('click', (event) => {
-    if (event.target === dialog) dialog.close();
+    if (event.target === dialog) closeRecipeDialog();
   });
 
   const params = new URLSearchParams(location.search);
