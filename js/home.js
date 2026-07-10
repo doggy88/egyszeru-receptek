@@ -257,15 +257,12 @@
     const recipe = source[Math.floor(Math.random() * source.length)];
     if (!recipe) return;
 
-    dialogImage.replaceWith(createRecipeImage(recipe, 'dialog-image-replacement'));
-    const replacement = document.querySelector('.dialog-image-replacement');
-    replacement.id = 'dialog-image';
-    window.requestAnimationFrame(() => {
-      const current = document.getElementById('dialog-image');
-      current.style.width = '100%';
-      current.style.height = '100%';
-      current.style.objectFit = 'cover';
-    });
+    const nextImage = createRecipeImage(recipe);
+    nextImage.id = 'dialog-image';
+    nextImage.style.width = '100%';
+    nextImage.style.height = '100%';
+    nextImage.style.objectFit = 'cover';
+    document.getElementById('dialog-image').replaceWith(nextImage);
 
     dialogCategory.textContent = recipe.category;
     dialogTitle.textContent = recipe.title;
