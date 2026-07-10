@@ -1,10 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hu">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Egyszeru Receptek</title>
+    <title>Egyszerű Receptek – ötletek minden napra</title>
+    <meta name="description" content="Egyszerű reggeli-, ebéd-, leves-, desszert- és szószreceptek egy helyen." />
+    <meta name="theme-color" content="#fffaf2" />
     <!-- favicon -->
     <link rel="shortcut icon" href="./Icon/favicon.ico" type="image/x-icon" />
     <!-- normalize -->
@@ -26,22 +28,22 @@
           <a href="index.html" class="nav-logo">
             <img src="./Icon/egyszeru_receptek_nav_logo.png" alt="simply recipes" />
           </a>
-          <button class="nav-btn btn">
+          <button class="nav-btn btn" type="button" aria-label="Menü megnyitása" aria-controls="primary-navigation" aria-expanded="false">
             <i class="fas fa-align-justify"></i>
           </button>
         </div>
-        <div class="nav-links">
-          <a href="index.html" class="nav-link"> home </a>
+        <div class="nav-links" id="primary-navigation">
+          <a href="index.html" class="nav-link" aria-current="page"> Főoldal </a>
           <a href="tags.html" class="nav-link"> címkék </a>
           <div class="search-wrapper">
             <label for="search">Keresés</label>
-            <input type="search" id="search" placeholder="recept keresése" oninput="search()">
+            <input type="search" id="search" placeholder="Mit ennél ma?" aria-label="Recept keresése" autocomplete="off">
           </div>
           
           
 
           <div class="nav-link contact-link">
-            <button id="veletlen" class="btn"> Véletlen Étel </button>
+            <button id="veletlen" class="btn" type="button">Véletlen recept</button>
           </div>
         </div>
       </div>
@@ -53,8 +55,8 @@
       <header class="hero">
         <div class="hero-container">
           <div class="hero-text">
-            <h1>egyszerű receptek</h1>
-            <h4>Csak receptek semmi több</h4>
+            <h1>Egyszerű receptek</h1>
+            <h4>Finom ötletek, felesleges körök nélkül.</h4>
           </div>
         </div>
       </header>
@@ -62,7 +64,7 @@
       <section class="recipes-container">
         <!-- tag container -->
         <div class="tags-container">
-          <h4>receptek</h4>
+          <h4>Kategóriák</h4>
           <div class="tags-list">
             <a href="./recipe_tags/reggeli.html">Reggeli (52)</a>
             <a href="./recipe_tags/ebed.html">Ebéd (125)</a>
@@ -75,7 +77,7 @@
         <!-- recipes list -->
         <div class="recipes-list" id="recipe-list">
           <!-- single recipe -->
-          <a href="https://www.nosalty.hu/recept/amerikai-szaftos-tarja" class="recipe" target="_blank">
+          <a href="https://www.nosalty.hu/recept/amerikai-szaftos-tarja" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://image-api.nosalty.hu/nosalty/images/recipes/Qe/7R/amerikai-szaftos-tarja.jpeg?w=640&h=480&fit=crop&s=0dee1c20992b0a346a73c65841d0245f"
               class="img recipe-img"
@@ -86,7 +88,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.youtube.com/watch?v=Qjc7qPgl5R4" class="recipe" target="_blank">
+          <a href="https://www.youtube.com/watch?v=Qjc7qPgl5R4" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://www.kitchensanctuary.com/wp-content/uploads/2014/10/Creamy-Pork-and-Apple-Casserole-square-FS-33.jpg"
               class="img recipe-img"
@@ -98,7 +100,7 @@
           
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="./recipes/ebed/bazsalikomos_rakott_teszta.html" class="recipe" target="_blank">
+          <a href="./recipes/ebed/bazsalikomos_rakott_teszta.html" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="./recipe_pix/bazsalikomos_rakott_teszta.jpg"
               class="img recipe-img"
@@ -109,7 +111,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.nosalty.hu/recept/gyors-bolognai-spagetti" class="recipe" target="_blank">
+          <a href="https://www.nosalty.hu/recept/gyors-bolognai-spagetti" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://kep.index.hu/1/0/1857/18576/185761/18576197_91d66836f8ae3f34f89ef57ab92f2b9e_wm.jpg"
               class="img recipe-img"
@@ -120,7 +122,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.nosalty.hu/recept/borsos-brassoi-apropecsenye" class="recipe" target="_blank">
+          <a href="https://www.nosalty.hu/recept/borsos-brassoi-apropecsenye" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="http://eszterlancfoz.blog.hu/media/image/brass%C3%B3i%20t%C3%A1ny%C3%A9ron.JPG"
               class="img recipe-img"
@@ -131,7 +133,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.nosalty.hu/recept/szaftos-brassoi-apropecsenye" class="recipe" target="_blank">
+          <a href="https://www.nosalty.hu/recept/szaftos-brassoi-apropecsenye" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://image-api.nosalty.hu/nosalty/images/recipes/AM/Zr/szaftos-brassoi-apropecsenye.jpeg?w=640&h=640&fit=crop&s=bb2e9518b7a4a203425a185dae01686b"
               class="img recipe-img"
@@ -142,7 +144,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://cafedelites.com/breakfast-casserole/" class="recipe" target="_blank">
+          <a href="https://cafedelites.com/breakfast-casserole/" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://i2.wp.com/www.downshiftology.com/wp-content/uploads/2020/12/Breakfast-Casserole-24.jpg"
               class="img recipe-img"
@@ -154,7 +156,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.youtube.com/watch?v=Vnfjf6YfR3Q" class="recipe" target="_blank">
+          <a href="https://www.youtube.com/watch?v=Vnfjf6YfR3Q" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://streetkitchen.hu/wp-content/uploads/2017/10/boeuf-bourguignon-3-1.jpg"
               class="img recipe-img"
@@ -165,7 +167,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.nosalty.hu/recept/legegyszerubb-spaghetti-alla-carbonara" class="recipe" target="_blank">
+          <a href="https://www.nosalty.hu/recept/legegyszerubb-spaghetti-alla-carbonara" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://www.mindmegette.hu/images/214/O/carbonara.jpg"
               class="img recipe-img"
@@ -176,7 +178,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.nosalty.hu/recept/hamis-cezar-salata" class="recipe" target="_blank">
+          <a href="https://www.nosalty.hu/recept/hamis-cezar-salata" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://www.mindmegette.hu/images/149/O/crop_201604271608_cezar_salata_szardellas_ontettel.jpg"
               class="img recipe-img"
@@ -187,7 +189,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.bbcgoodfood.com/recipes/cheesy-broccoli-pasta-bake" class="recipe" target="_blank">
+          <a href="https://www.bbcgoodfood.com/recipes/cheesy-broccoli-pasta-bake" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://images.immediate.co.uk/production/volatile/sites/30/2020/08/recipe-image-legacy-id-197477_10-8d45e07.jpg?resize=960,872?quality=90&webp=true&resize=300,272"
               class="img recipe-img"
@@ -198,7 +200,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.nosalty.hu/recept/curry-s-csirke-indiai-modon" class="recipe" target="_blank">
+          <a href="https://www.nosalty.hu/recept/curry-s-csirke-indiai-modon" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://www.kitchensanctuary.com/wp-content/uploads/2020/08/Easy-Chicken-Curry-square-FS-117.jpg"
               class="img recipe-img"
@@ -209,7 +211,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.youtube.com/watch?v=KJ5HlyB5YoM" class="recipe" target="_blank">
+          <a href="https://www.youtube.com/watch?v=KJ5HlyB5YoM" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://streetkitchen.hu/wp-content/uploads/2018/06/csirke-korma-01.jpg"
               class="img recipe-img"
@@ -220,7 +222,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.youtube.com/watch?v=FU_The50Kis" class="recipe" target="_blank">
+          <a href="https://www.youtube.com/watch?v=FU_The50Kis" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://www.kitchensanctuary.com/wp-content/uploads/2019/02/Creamy-Chicken-and-mushroom-casserole-tall-FS.jpg"
               class="img recipe-img"
@@ -231,7 +233,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.nosalty.hu/recept/chicken-mushroom-cobbler" class="recipe" target="_blank">
+          <a href="https://www.nosalty.hu/recept/chicken-mushroom-cobbler" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="../recipe_pix/chicken_cobbler.jpg"
               class="img recipe-img"
@@ -242,7 +244,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.youtube.com/watch?v=lnRmIKkGCIA" class="recipe" target="_blank">
+          <a href="https://www.youtube.com/watch?v=lnRmIKkGCIA" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://littlesunnykitchen.com/wp-content/uploads/Chicke-tikka-masala-2-7.jpg"
               class="img recipe-img"
@@ -253,7 +255,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.nosalty.hu/recept/chimichanga-marhaval" class="recipe" target="_blank">
+          <a href="https://www.nosalty.hu/recept/chimichanga-marhaval" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://assets.tmecosys.com/image/upload/t_web767x639/img/recipe/ras/Assets/2899dced-5a76-4d77-84d2-50271eb31070/Derivates/d3009809-4188-42ff-8c81-e787428d78b4.jpg"
               class="img recipe-img"
@@ -264,7 +266,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://streetkitchen.hu/hust-hussal/ciganypecsenye-hagymas-burgonyaval/" class="recipe" target="_blank">
+          <a href="https://streetkitchen.hu/hust-hussal/ciganypecsenye-hagymas-burgonyaval/" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://receptneked.hu/wp-content/uploads/2012/08/cig%C3%A1ny-pecsenye1.jpg"
               class="img recipe-img"
@@ -275,7 +277,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.youtube.com/watch?v=zjoUxbYQQFo" class="recipe" target="_blank">
+          <a href="https://www.youtube.com/watch?v=zjoUxbYQQFo" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://img-global.cpcdn.com/recipes/e53dc6da2f7681a7/1200x630cq70/photo.jpg"
               class="img recipe-img"
@@ -286,7 +288,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.nosalty.hu/recept/pasztorpite" class="recipe" target="_blank">
+          <a href="https://www.nosalty.hu/recept/pasztorpite" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://food-images.files.bbci.co.uk/food/recipes/classiccottagepie_90765_16x9.jpg"
               class="img recipe-img"
@@ -297,7 +299,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.nosalty.hu/recept/chili-con-carne-doggmatol" class="recipe" target="_blank">
+          <a href="https://www.nosalty.hu/recept/chili-con-carne-doggmatol" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://image-api.nosalty.hu/nosalty/images/recipes/xw/wg/chili-con-carne-doggmatol.jpeg?w=640&h=480&fit=crop&s=707eefb99e10a70fc3eef27f44854d73"
               class="img recipe-img"
@@ -308,7 +310,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.youtube.com/watch?v=vknX8h_5uGI" class="recipe" target="_blank">
+          <a href="https://www.youtube.com/watch?v=vknX8h_5uGI" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://yestoyolks.com/wp-content/uploads/2020/09/IMG_3745.jpg"
               class="img recipe-img"
@@ -319,7 +321,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.youtube.com/watch?v=4iJDKcL_IUE" class="recipe" target="_blank">
+          <a href="https://www.youtube.com/watch?v=4iJDKcL_IUE" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://ocdn.eu/pulscms-transforms/1/NVUktkqTURBXy8zODBkMWQwNDQxOWFhMTUwMzQyMzk3OGQ3ZjcyMzI3Mi5qcGVnkZUCzQOlAMLD"
               class="img recipe-img"
@@ -330,7 +332,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.nosalty.hu/recept/burrito" class="recipe" target="_blank">
+          <a href="https://www.nosalty.hu/recept/burrito" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://scm-assets.constant.co/scm/unilever/e9dc924f238fa6cc29465942875fe8f0/39acb0d0-feaa-4854-b22e-2367653e3351.jpg"
               class="img recipe-img"
@@ -341,7 +343,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.youtube.com/watch?v=vlK8fOMx91k" class="recipe" target="_blank">
+          <a href="https://www.youtube.com/watch?v=vlK8fOMx91k" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://streetkitchen.hu/wp-content/uploads/2017/11/img_8112.jpg"
               class="img recipe-img"
@@ -352,7 +354,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.nosalty.hu/recept/feherboros-csirkes-gombas-rizotto" class="recipe" target="_blank">
+          <a href="https://www.nosalty.hu/recept/feherboros-csirkes-gombas-rizotto" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://kep.index.hu/1/0/3189/31897/318974/31897409_0f801924bd43ca7ae01cb3b708dbda78_wm.jpg"
               class="img recipe-img"
@@ -363,7 +365,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.nosalty.hu/recept/csirkes-tejszines-penne" class="recipe" target="_blank">
+          <a href="https://www.nosalty.hu/recept/csirkes-tejszines-penne" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="../recipe_pix/csirkes-tejszines-penne.jpeg"
               class="img recipe-img"
@@ -374,7 +376,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.youtube.com/watch?v=1omxqhBXWC0" class="recipe" target="_blank">
+          <a href="https://www.youtube.com/watch?v=1omxqhBXWC0" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://i.ytimg.com/vi/A43FrxyjPf8/maxresdefault.jpg"
               class="img recipe-img"
@@ -385,7 +387,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.youtube.com/watch?v=phE9nuY_4Ao" class="recipe" target="_blank">
+          <a href="https://www.youtube.com/watch?v=phE9nuY_4Ao" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://www.recetin.com/wp-content/uploads/2013/05/pimientos_rellenos_carne_picada.jpg"
               class="img recipe-img"
@@ -396,7 +398,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.nosalty.hu/recept/szilvalekvaros-derelye" class="recipe" target="_blank">
+          <a href="https://www.nosalty.hu/recept/szilvalekvaros-derelye" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://mesterszakacs.hu/receptkepek/800/600/lekvaros-derelye-7060.jpg"
               class="img recipe-img"
@@ -407,7 +409,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.youtube.com/watch?v=dnJH1fBXzNM" class="recipe" target="_blank">
+          <a href="https://www.youtube.com/watch?v=dnJH1fBXzNM" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://www.mindmegette.hu/images/215/O/sertesporkolt.jpg"
               class="img recipe-img"
@@ -418,7 +420,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.youtube.com/watch?v=puecPj0uNiQ" class="recipe" target="_blank">
+          <a href="https://www.youtube.com/watch?v=puecPj0uNiQ" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://kep.cdn.index.hu/1/0/4197/41970/419707/41970700_c44ea83034f93171d281a04570a9a899_wm.jpg"
               class="img recipe-img"
@@ -429,7 +431,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="http://www.mindmegette.hu/edesburgonyas-gnocchi.recept/" class="recipe" target="_blank">
+          <a href="http://www.mindmegette.hu/edesburgonyas-gnocchi.recept/" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="../recipe_pix/edesburgonyas_gnocchi.jpg"
               class="img recipe-img"
@@ -440,7 +442,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.nosalty.hu/recept/egyben-sult-karaj" class="recipe" target="_blank">
+          <a href="https://www.nosalty.hu/recept/egyben-sult-karaj" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="../recipe_pix/egybensult_karaj.jpg"
               class="img recipe-img"
@@ -451,7 +453,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.youtube.com/watch?v=m0I4fuCeQhg" class="recipe" target="_blank">
+          <a href="https://www.youtube.com/watch?v=m0I4fuCeQhg" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://brandsitesplatform-res.cloudinary.com/image/fetch/w_auto:100,c_scale,q_auto:eco,f_auto,fl_lossy,dpr_auto,e_sharpen:85/https://assets.brandplatform.generalmills.com%2F-%2Fmedia%2FProject%2FGMI%2Foldelpaso%2Foldelpaso-us%2FRecipes%2Feasy-beef-enchiladas.jpg%3Frev%3D5d01153a5d4e4e5bace661327f90099d"
               class="img recipe-img"
@@ -462,7 +464,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.youtube.com/watch?v=FUj9DTTeFFk" class="recipe" target="_blank">
+          <a href="https://www.youtube.com/watch?v=FUj9DTTeFFk" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://www.foodiecrush.com/fajita-seasoning/chicken-fajitas-foodiecrush-com-008/"
               class="img recipe-img"
@@ -473,7 +475,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.youtube.com/watch?v=8ehjnxQaP9E" class="recipe" target="_blank">
+          <a href="https://www.youtube.com/watch?v=8ehjnxQaP9E" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://image-api.nosalty.hu/nosalty/images/recipes/Kg/Pn/fasirt.jpeg?w=640&h=640&fit=crop&s=6ecf72791e2eed446517d4bd7d2a4c3f"
               class="img recipe-img"
@@ -484,7 +486,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.youtube.com/watch?v=qHl1MoXPXz0" class="recipe" target="_blank">
+          <a href="https://www.youtube.com/watch?v=qHl1MoXPXz0" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://kep.index.hu/1/0/3169/31692/316926/31692679_2432373_f07eca121b0bb60325222bd170bb9817_wm.jpg"
               class="img recipe-img"
@@ -495,7 +497,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="http://www.mindmegette.hu/fokhagymas-parmezanos-teszta-serpenyoben.recept/" class="recipe" target="_blank">
+          <a href="http://www.mindmegette.hu/fokhagymas-parmezanos-teszta-serpenyoben.recept/" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://www.nice.hu/upload/2021/Majus/parmezanos_teszta_1.jpg"
               class="img recipe-img"
@@ -506,7 +508,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.topreceptek.hu/recept/csipos-fokhagymas-sertescsikok-r2430" class="recipe" target="_blank">
+          <a href="https://www.topreceptek.hu/recept/csipos-fokhagymas-sertescsikok-r2430" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://streetkitchen.hu/wp-content/uploads/2022/01/yuxiang-sertes-csikok-6-scaled.jpg"
               class="img recipe-img"
@@ -517,7 +519,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.nosalty.hu/recept/fott-sonka" class="recipe" target="_blank">
+          <a href="https://www.nosalty.hu/recept/fott-sonka" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://image-api.nosalty.hu/nosalty/images/recipes/6B/R2/husveti-fott-sonka.jpeg?w=640&h=640&fit=crop&s=18c29415103e64d6a3ae7a645d8a6f65"
               class="img recipe-img"
@@ -528,7 +530,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.youtube.com/watch?v=NuOGVT4Ed0w" class="recipe" target="_blank">
+          <a href="https://www.youtube.com/watch?v=NuOGVT4Ed0w" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://www.kitchenkonfidence.com/wp-content/uploads/2021/04/Gnocchi-with-Tomato-Sauce-4.jpg"
               class="img recipe-img"
@@ -539,7 +541,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.nosalty.hu/recept/tejfolos-gombaporkolt" class="recipe" target="_blank">
+          <a href="https://www.nosalty.hu/recept/tejfolos-gombaporkolt" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://image-api.nosalty.hu/nosalty/images/recipes/gL/bW/tejfolos-gombaporkolt.jpeg?w=640&h=640&fit=crop&s=84558f875c5ff1b938c280f781582735"
               class="img recipe-img"
@@ -550,7 +552,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="./recipes/ebed/gombas_sajtos_tepsis_hus.html" class="recipe" target="_blank">
+          <a href="./recipes/ebed/gombas_sajtos_tepsis_hus.html" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="./recipe_pix/gombas_sajtos_tepsis_hus.JPG"
               class="img recipe-img"
@@ -561,7 +563,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.youtube.com/watch?v=S3-5_7KmlhU" class="recipe" target="_blank">
+          <a href="https://www.youtube.com/watch?v=S3-5_7KmlhU" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://image-api.nosalty.hu/nosalty/images/recipes/L9/nH/bakonyi-sertesszelet-viciko-konyhajabol.jpeg?w=640&h=480&fit=crop&s=8f53563a85488347b5bfc09dc5a3703d"
               class="img recipe-img"
@@ -572,7 +574,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.nosalty.hu/recept/gombota" class="recipe" target="_blank">
+          <a href="https://www.nosalty.hu/recept/gombota" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://i0.wp.com/vajling.hu/wp-content/uploads/2020/10/reszelt-teszta-gombota-glutenmentesen-recept-foto.jpg?resize=751%2C532&ssl=1"
               class="img recipe-img"
@@ -583,7 +585,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.youtube.com/watch?v=3WA5owbTfVA" class="recipe" target="_blank">
+          <a href="https://www.youtube.com/watch?v=3WA5owbTfVA" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://soyricefire.com/wp-content/uploads/2014/03/Gong-Bao-Chicken.jpg"
               class="img recipe-img"
@@ -594,7 +596,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.nosalty.hu/recept/grizes-teszta-baracklekvarral" class="recipe" target="_blank">
+          <a href="https://www.nosalty.hu/recept/grizes-teszta-baracklekvarral" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://img-global.cpcdn.com/recipes/f899e9bfd9a287da/1200x630cq70/photo.jpg"
               class="img recipe-img"
@@ -605,7 +607,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="./recipes/ebed/gyros_tal.html" class="recipe" target="_blank">
+          <a href="./recipes/ebed/gyros_tal.html" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="../recipe_pix/gyrostal.jpg"
               class="img recipe-img"
@@ -616,7 +618,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://youtu.be/YVlIExa-xek" class="recipe" target="_blank">
+          <a href="https://youtu.be/YVlIExa-xek" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://kep.index.hu/1/0/4041/40419/404192/40419299_a315f7f2659081796284ed46e6f7d6bc_wm.jpg"
               class="img recipe-img"
@@ -627,7 +629,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.nosalty.hu/recept/hagymakremes-ciganypecsenye" class="recipe" target="_blank">
+          <a href="https://www.nosalty.hu/recept/hagymakremes-ciganypecsenye" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://image-api.nosalty.hu/nosalty/images/recipes/lz/7S/hagymakremes-ciganypecsenye.jpeg?w=640&h=480&fit=crop&s=54b6730aaba2245b53e2145b360f4c9d"
               class="img recipe-img"
@@ -638,7 +640,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.nosalty.hu/recept/klasszikus-hagymas-rostelyos" class="recipe" target="_blank">
+          <a href="https://www.nosalty.hu/recept/klasszikus-hagymas-rostelyos" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://image-api.nosalty.hu/nosalty/images/recipes/ef/4w/klasszikus-hagymas-rostelyos.jpeg?w=640&h=640&fit=crop&s=25e8ff78b373192e9e4b21e2e1eca22c"
               class="img recipe-img"
@@ -649,7 +651,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="./recipes/ebed/halas_curry.html" class="recipe" target="_blank">
+          <a href="./recipes/ebed/halas_curry.html" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="./recipe_pix/fish_curry2.jpg"
               class="img recipe-img"
@@ -661,7 +663,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.youtube.com/watch?v=wA-RAt_MNxc" class="recipe" target="_blank">
+          <a href="https://www.youtube.com/watch?v=wA-RAt_MNxc" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://zestfulkitchen.com/wp-content/uploads/2019/11/asian-turkey-meatballs_for-web_cover-e1632017373689.jpg"
               class="img recipe-img"
@@ -672,7 +674,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="./recipes/ebed/hot_pot.html" class="recipe" target="_blank">
+          <a href="./recipes/ebed/hot_pot.html" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="./recipe_pix/hotpot.jpg"
               class="img recipe-img"
@@ -683,7 +685,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.youtube.com/watch?v=_4PNV01J3dc" class="recipe" target="_blank">
+          <a href="https://www.youtube.com/watch?v=_4PNV01J3dc" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://potatorolls.com/wp-content/uploads/2020/10/Basic-Hot-Dogs2-960x640.jpg"
               class="img recipe-img"
@@ -694,7 +696,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.nosalty.hu/recept/husos-rantott-palacsinta" class="recipe" target="_blank">
+          <a href="https://www.nosalty.hu/recept/husos-rantott-palacsinta" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://receptmegoszto.hu/keptar_receptek/174.jpg"
               class="img recipe-img"
@@ -705,7 +707,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.nosalty.hu/recept/illatos-omlos-csirkemell" class="recipe" target="_blank">
+          <a href="https://www.nosalty.hu/recept/illatos-omlos-csirkemell" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://i.ytimg.com/vi/4V9oSJkzKV8/maxresdefault.jpg"
               class="img recipe-img"
@@ -716,7 +718,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.youtube.com/watch?v=XFm-MyHo0Ok" class="recipe" target="_blank">
+          <a href="https://www.youtube.com/watch?v=XFm-MyHo0Ok" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://www.mindmegette.hu/images/208/O/kfc-csirke.jpg"
               class="img recipe-img"
@@ -727,7 +729,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.youtube.com/watch?v=Ij3MP4gOvnQ" class="recipe" target="_blank">
+          <a href="https://www.youtube.com/watch?v=Ij3MP4gOvnQ" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://www.thereciperebel.com/wp-content/uploads/2016/03/chicken-chow-mein-TRR-1200-21-of-31.jpg"
               class="img recipe-img"
@@ -738,7 +740,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.youtube.com/watch?v=mQufT9XjimY" class="recipe" target="_blank">
+          <a href="https://www.youtube.com/watch?v=mQufT9XjimY" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://cafedelites.com/wp-content/uploads/2018/04/Best-Kung-Pao-Chicken-IMAGE-2.jpg"
               class="img recipe-img"
@@ -749,7 +751,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.youtube.com/watch?v=SuqRisgZfrU" class="recipe" target="_blank">
+          <a href="https://www.youtube.com/watch?v=SuqRisgZfrU" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://i.pinimg.com/originals/27/34/67/27346795f69d82381f94fbda0bd02483.jpg"
               class="img recipe-img"
@@ -760,7 +762,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://whats4dinnersolutions.com/2014/09/28/lemon-garlic-sticky-chicken/" class="recipe" target="_blank">
+          <a href="https://whats4dinnersolutions.com/2014/09/28/lemon-garlic-sticky-chicken/" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://www.lecremedelacrumb.com/wp-content/uploads/2017/04/sticky-chinese-lemon-chicken-101-500x500.jpg"
               class="img recipe-img"
@@ -771,7 +773,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.nosalty.hu/recept/rusztikus-tocsni" class="recipe" target="_blank">
+          <a href="https://www.nosalty.hu/recept/rusztikus-tocsni" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://www.mindmegette.hu/images/14/O/22441_repas-burgonyas-lepcsanka_n-201510170518.jpg"
               class="img recipe-img"
@@ -782,7 +784,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.youtube.com/watch?v=I_8yapOXNPM" class="recipe" target="_blank">
+          <a href="https://www.youtube.com/watch?v=I_8yapOXNPM" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://pinchofyum.com/wp-content/uploads/Instant-Pot-Mac-and-Cheese-Square.jpg"
               class="img recipe-img"
@@ -793,7 +795,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.youtube.com/watch?v=AmC9SmCBUj4" class="recipe" target="_blank">
+          <a href="https://www.youtube.com/watch?v=AmC9SmCBUj4" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://www.mindmegette.hu/images/136/O/steak_2.gif"
               class="img recipe-img"
@@ -804,7 +806,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.nosalty.hu/recept/marhahusos-burrito" class="recipe" target="_blank">
+          <a href="https://www.nosalty.hu/recept/marhahusos-burrito" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="../recipe_pix/marha_burrito.jpg"
               class="img recipe-img"
@@ -815,7 +817,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.youtube.com/watch?v=7Xzy9vr3HOU" class="recipe" target="_blank">
+          <a href="https://www.youtube.com/watch?v=7Xzy9vr3HOU" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="../recipe_pix/marhaporkolt.jpg"
               class="img recipe-img"
@@ -826,7 +828,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.nosalty.hu/recept/meggyszosz-kingatol" class="recipe" target="_blank">
+          <a href="https://www.nosalty.hu/recept/meggyszosz-kingatol" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://nlc.p3k.hu/uploads/2018/06/meggysz%C3%B3sz.jpg"
               class="img recipe-img"
@@ -837,7 +839,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="http://www.mindmegette.hu/mexikoi-rizses-hus.recept/" class="recipe" target="_blank">
+          <a href="http://www.mindmegette.hu/mexikoi-rizses-hus.recept/" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="../recipe_pix/mexikoi_rizseshus.jpg"
               class="img recipe-img"
@@ -848,7 +850,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.nosalty.hu/recept/mezes-mustaros-csirke" class="recipe" target="_blank">
+          <a href="https://www.nosalty.hu/recept/mezes-mustaros-csirke" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://streetkitchen.hu/wp-content/uploads/2021/06/mezes-mustaros-csirke-4-egyedi.jpg"
               class="img recipe-img"
@@ -859,7 +861,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.nosalty.hu/recept/retro-milanoi-makaroni" class="recipe" target="_blank">
+          <a href="https://www.nosalty.hu/recept/retro-milanoi-makaroni" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://img-global.cpcdn.com/recipes/0ecdd57f8e7ff83b/680x482cq70/milanoi-makaroni-recept-foto.jpg"
               class="img recipe-img"
@@ -870,7 +872,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.nosalty.hu/recept/csipos-mogyoros-csirke" class="recipe" target="_blank">
+          <a href="https://www.nosalty.hu/recept/csipos-mogyoros-csirke" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://leitesculinaria.com/wp-content/uploads/2020/06/kung-pao-chicken-fp.jpg"
               class="img recipe-img"
@@ -881,7 +883,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.youtube.com/watch?v=156Cf9NPcy4" class="recipe" target="_blank">
+          <a href="https://www.youtube.com/watch?v=156Cf9NPcy4" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://www.kitchensanctuary.com/wp-content/uploads/2019/03/Chicken-and-mushroom-pie-with-bacon-square-FS.jpg"
               class="img recipe-img"
@@ -892,7 +894,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.youtube.com/watch?v=LgzudBvmd08" class="recipe" target="_blank">
+          <a href="https://www.youtube.com/watch?v=LgzudBvmd08" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="../recipe_pix/nachos.jpg"
               class="img recipe-img"
@@ -903,7 +905,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.nosalty.hu/recept/krumplis-nudli" class="recipe" target="_blank">
+          <a href="https://www.nosalty.hu/recept/krumplis-nudli" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://image-api.nosalty.hu/nosalty/images/recipes/tZ/1j/krumplis-nudli.jpeg?w=640&h=640&fit=crop&s=a3842c324a7bfc1e7fa7e0811f2ff12d"
               class="img recipe-img"
@@ -914,7 +916,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.youtube.com/watch?v=HfgWufS9FSw" class="recipe" target="_blank">
+          <a href="https://www.youtube.com/watch?v=HfgWufS9FSw" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="../recipe_pix/tejszines-gomba-spagetti-tesztaval.jpeg"
               class="img recipe-img"
@@ -925,7 +927,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.youtube.com/watch?v=Jnne-hzRUCA" class="recipe" target="_blank">
+          <a href="https://www.youtube.com/watch?v=Jnne-hzRUCA" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://assets.tmecosys.com/image/upload/t_web767x639/img/recipe/ras/Assets/7DE647CE-2E09-4CBE-88EE-CFFCC70D7440/Derivates/F8CA1C89-596A-4EC0-9A63-6505DDBD528C.jpg"
               class="img recipe-img"
@@ -936,7 +938,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.youtube.com/watch?v=5cMdOpwbdYM" class="recipe" target="_blank">
+          <a href="https://www.youtube.com/watch?v=5cMdOpwbdYM" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://foodandwine.hu/wp-content/uploads/2019/05/riojana-800x675.jpg"
               class="img recipe-img"
@@ -947,7 +949,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.youtube.com/watch?v=MUi8znMQknU" class="recipe" target="_blank">
+          <a href="https://www.youtube.com/watch?v=MUi8znMQknU" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://kep.index.hu/1/0/4272/42729/427298/42729838_02960d478f6b83073d6964a0a8ab0e17_wm.jpg"
               class="img recipe-img"
@@ -958,7 +960,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.nosalty.hu/recept/macso-reggeli" class="recipe" target="_blank">
+          <a href="https://www.nosalty.hu/recept/macso-reggeli" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://streetkitchen.hu/wp-content/uploads/2017/09/IMG_2823-e1506338549644-1296x855.jpg"
               class="img recipe-img"
@@ -969,7 +971,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.nosalty.hu/recept/pestoval-toltott-csirkemell" class="recipe" target="_blank">
+          <a href="https://www.nosalty.hu/recept/pestoval-toltott-csirkemell" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="../recipe_pix/pesztos_rolad.jpg"
               class="img recipe-img"
@@ -980,7 +982,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.youtube.com/watch?v=iUCqfoGrakA" class="recipe" target="_blank">
+          <a href="https://www.youtube.com/watch?v=iUCqfoGrakA" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://streetkitchen.hu/wp-content/uploads/2019/09/7m9a1141-1280x1920-1.jpg"
               class="img recipe-img"
@@ -991,7 +993,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.youtube.com/watch?v=NgJ0knMHg8k" class="recipe" target="_blank">
+          <a href="https://www.youtube.com/watch?v=NgJ0knMHg8k" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="../recipe_pix/pizza.jpg"
               class="img recipe-img"
@@ -1002,7 +1004,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.youtube.com/watch?v=ijsJ2l9yqCc" class="recipe" target="_blank">
+          <a href="https://www.youtube.com/watch?v=ijsJ2l9yqCc" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://www.mindmegette.hu/images/199/O/pulled_pork.jpg"
               class="img recipe-img"
@@ -1013,7 +1015,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.youtube.com/watch?v=sK48eO-Hi2k" class="recipe" target="_blank">
+          <a href="https://www.youtube.com/watch?v=sK48eO-Hi2k" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://www.speed-fit.hu/wp-content/uploads/2022/04/2022-04-14-konnyen_elkeszitheto_csirkes_quesadilla1.jpg"
               class="img recipe-img"
@@ -1024,7 +1026,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.nosalty.hu/recept/klasszikus-rakott-krumpli" class="recipe" target="_blank">
+          <a href="https://www.nosalty.hu/recept/klasszikus-rakott-krumpli" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://streetkitchen.hu/wp-content/uploads/2022/03/rakott-krumpli-1-scaled.jpg"
               class="img recipe-img"
@@ -1035,7 +1037,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.nosalty.hu/recept/tokeletes-rantott-hus-petrezselymes-parazskrumplival" class="recipe" target="_blank">
+          <a href="https://www.nosalty.hu/recept/tokeletes-rantott-hus-petrezselymes-parazskrumplival" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://kep.index.hu/1/0/3541/35411/354110/35411089_67ec74e373b29a9f882de074287b0921_wm.jpg"
               class="img recipe-img"
@@ -1046,7 +1048,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.nosalty.hu/recept/rantott-parizsi" class="recipe" target="_blank">
+          <a href="https://www.nosalty.hu/recept/rantott-parizsi" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://img-global.cpcdn.com/recipes/819ea8423613139e/680x482cq70/rantott-parizsi-recept-foto.jpg"
               class="img recipe-img"
@@ -1057,7 +1059,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.nosalty.hu/recept/klasszikus-rantott-sajt" class="recipe" target="_blank">
+          <a href="https://www.nosalty.hu/recept/klasszikus-rantott-sajt" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="../recipe_pix/rantott_sajt.jpg"
               class="img recipe-img"
@@ -1068,7 +1070,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.nosalty.hu/recept/egyszeru-bacskai-rizses-hus" class="recipe" target="_blank">
+          <a href="https://www.nosalty.hu/recept/egyszeru-bacskai-rizses-hus" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://egytaletelek.hu/wp-content/uploads/rizses-hus-csirkemellbol.jpg"
               class="img recipe-img"
@@ -1079,7 +1081,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.nosalty.hu/recept/sajtos-csirkes-rakott-karfiol" class="recipe" target="_blank">
+          <a href="https://www.nosalty.hu/recept/sajtos-csirkes-rakott-karfiol" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://kep.index.hu/1/0/2050/20502/205022/20502241_fdd31c9570f344cb6c12f54bdeab80f3_wm.jpg"
               class="img recipe-img"
@@ -1090,7 +1092,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.youtube.com/watch?v=_y0S2nQApdI" class="recipe" target="_blank">
+          <a href="https://www.youtube.com/watch?v=_y0S2nQApdI" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://therecipe.website/wp-content/uploads/2018/08/Sausage-and-Onion-Gravy.jpg"
               class="img recipe-img"
@@ -1101,7 +1103,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.youtube.com/watch?v=a3EYQARJkLk" class="recipe" target="_blank">
+          <a href="https://www.youtube.com/watch?v=a3EYQARJkLk" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://www.thewholesomedish.com/wp-content/uploads/2019/02/The-Best-Classic-Shepherds-Pie-550-500x500.jpg"
               class="img recipe-img"
@@ -1112,7 +1114,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.youtube.com/watch?v=ErE-k-yBRzU" class="recipe" target="_blank">
+          <a href="https://www.youtube.com/watch?v=ErE-k-yBRzU" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://www.greedygourmet.com/wp-content/uploads/2020/05/lambshish.jpg"
               class="img recipe-img"
@@ -1123,7 +1125,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.nosalty.hu/recept/slambuc" class="recipe" target="_blank">
+          <a href="https://www.nosalty.hu/recept/slambuc" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://2.bp.blogspot.com/-KqYqmG5PYNs/Tgmt_PssrMI/AAAAAAAAD_A/aJJQe--SIKg/s1600/s%25C3%25BCti+4247.jpg"
               class="img recipe-img"
@@ -1134,7 +1136,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.nosalty.hu/recept/sonkas-hagymas-tojasos-rakott-teszta" class="recipe" target="_blank">
+          <a href="https://www.nosalty.hu/recept/sonkas-hagymas-tojasos-rakott-teszta" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://receptek365.info/wp-content/uploads/2019/10/sonkas-rakott-teszta-nagyon-izletes-510x287.jpg"
               class="img recipe-img"
@@ -1145,7 +1147,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://youtu.be/FdXKcMC2IpU?t=183" class="recipe" target="_blank">
+          <a href="https://youtu.be/FdXKcMC2IpU?t=183" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://img.taste.com.au/kmT_aJW8/taste/2016/11/spaghetti-with-tuna-sauce-13068-1.jpeg"
               class="img recipe-img"
@@ -1156,7 +1158,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.nosalty.hu/recept/stefania-szelet" class="recipe" target="_blank">
+          <a href="https://www.nosalty.hu/recept/stefania-szelet" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="../recipe_pix/stefania-szelet.jpeg"
               class="img recipe-img"
@@ -1167,7 +1169,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.youtube.com/watch?v=OhOoGTuGfHE" class="recipe" target="_blank">
+          <a href="https://www.youtube.com/watch?v=OhOoGTuGfHE" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://kitchencookbook.net/wp-content/uploads/2019/08/p2-2.jpg"
               class="img recipe-img"
@@ -1178,7 +1180,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.youtube.com/watch?v=_n-etPBXtTs" class="recipe" target="_blank">
+          <a href="https://www.youtube.com/watch?v=_n-etPBXtTs" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://upload.wikimedia.org/wikipedia/commons/1/1e/Traditional.Sunday.Roast-01.jpg"
               class="img recipe-img"
@@ -1189,7 +1191,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.nosalty.hu/recept/egyszeru-sult-csirkecomb" class="recipe" target="_blank">
+          <a href="https://www.nosalty.hu/recept/egyszeru-sult-csirkecomb" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://kep.index.hu/1/0/3226/32262/322624/32262459_2079b2c78bde6dd4ca6d262620e14ac1_wm.jpg"
               class="img recipe-img"
@@ -1200,7 +1202,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.youtube.com/watch?v=OcDeEb0SweE" class="recipe" target="_blank">
+          <a href="https://www.youtube.com/watch?v=OcDeEb0SweE" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://kep.index.hu/1/0/3456/34568/345685/34568567_2646631_42a174edadbce3ef761e81a3979223c3_wm.jpg"
               class="img recipe-img"
@@ -1211,7 +1213,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.nosalty.hu/recept/ropogos-sult-kacsa-parolt-kaposztaval" class="recipe" target="_blank">
+          <a href="https://www.nosalty.hu/recept/ropogos-sult-kacsa-parolt-kaposztaval" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://www.ehezesmentes-karcsusag-szafival-blog.hu/wp-content/uploads/2014/12/sult-kacsacomb-narancsszosszal-850x425.jpg"
               class="img recipe-img"
@@ -1222,7 +1224,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.nosalty.hu/recept/egyszeru-fokhagymas-sult-oldalas" class="recipe" target="_blank">
+          <a href="https://www.nosalty.hu/recept/egyszeru-fokhagymas-sult-oldalas" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://www.mindmegette.hu/images/214/O/sult-oldalas.jpg"
               class="img recipe-img"
@@ -1233,7 +1235,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.youtube.com/watch?v=7hVjvdKWh9M" class="recipe" target="_blank">
+          <a href="https://www.youtube.com/watch?v=7hVjvdKWh9M" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://www.kitchensanctuary.com/wp-content/uploads/2021/05/Szechuan-Chicken-Square-FS-18.jpg"
               class="img recipe-img"
@@ -1244,7 +1246,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.youtube.com/watch?v=ZAsMxY4VC2E" class="recipe" target="_blank">
+          <a href="https://www.youtube.com/watch?v=ZAsMxY4VC2E" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/szechuan-beef-horizontal-1530892577.jpg"
               class="img recipe-img"
@@ -1255,7 +1257,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.nosalty.hu/recept/szekelykaposzta-1" class="recipe" target="_blank">
+          <a href="https://www.nosalty.hu/recept/szekelykaposzta-1" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://kep.index.hu/1/0/3456/34564/345644/34564483_2646337_378bddc06540bc4d09864d4658e22607_wm.jpg"
               class="img recipe-img"
@@ -1266,7 +1268,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.nosalty.hu/recept/kinai-szezammagos-csirke" class="recipe" target="_blank">
+          <a href="https://www.nosalty.hu/recept/kinai-szezammagos-csirke" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://img-global.cpcdn.com/recipes/902691d3f0c124c4/1200x630cq70/photo.jpg"
               class="img recipe-img"
@@ -1277,7 +1279,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.nosalty.hu/recept/expressz-szilvasgomboc-szilvasgomboc-2" class="recipe" target="_blank">
+          <a href="https://www.nosalty.hu/recept/expressz-szilvasgomboc-szilvasgomboc-2" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://www.mindmegette.hu/images/23/O/31431_finom-szilvasgomboc_n-201510170726.jpg"
               class="img recipe-img"
@@ -1288,7 +1290,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.nosalty.hu/recept/szuzpecsenye-lecsos-burgonyaval" class="recipe" target="_blank">
+          <a href="https://www.nosalty.hu/recept/szuzpecsenye-lecsos-burgonyaval" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://img-global.cpcdn.com/recipes/31b1a4af30860183/1200x630cq70/photo.jpg"
               class="img recipe-img"
@@ -1299,7 +1301,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.youtube.com/watch?v=J4uPHO2GUTM" class="recipe" target="_blank">
+          <a href="https://www.youtube.com/watch?v=J4uPHO2GUTM" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://img-global.cpcdn.com/recipes/8a7e7d368876a451/1200x630cq70/photo.jpg"
               class="img recipe-img"
@@ -1310,7 +1312,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.nosalty.hu/recept/tatarbeefsteak-magyarosan" class="recipe" target="_blank">
+          <a href="https://www.nosalty.hu/recept/tatarbeefsteak-magyarosan" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://kep.index.hu/1/0/3577/35770/357703/35770337_2735133_a9fa9dc4fa45683471f36b1af03e7bec_wm.jpg"
               class="img recipe-img"
@@ -1321,7 +1323,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.nosalty.hu/recept/tejfolben-pacolt-csirkemell-tepsis-reszelt-krumplival?jwsource=cl&amp;fbclid=IwAR3t6wRhNrDW2Ht-Tyw0xCGi5g10MTa9ztbONNQGNayXwlBfD7zrMbv9Xc4" class="recipe" target="_blank">
+          <a href="https://www.nosalty.hu/recept/tejfolben-pacolt-csirkemell-tepsis-reszelt-krumplival?jwsource=cl&amp;fbclid=IwAR3t6wRhNrDW2Ht-Tyw0xCGi5g10MTa9ztbONNQGNayXwlBfD7zrMbv9Xc4" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://image-api.nosalty.hu/nosalty/images/recipes/TM/qC/tejfolben-pacolt-csirkemell-tepsis-reszelt-krumplival.jpeg?w=640&h=640&fit=crop&s=9cfd6ce035950071095016872b9bc1d6"
               class="img recipe-img"
@@ -1332,7 +1334,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.nosalty.hu/recept/gyors-tepsis-burgonya-debrecenivel" class="recipe" target="_blank">
+          <a href="https://www.nosalty.hu/recept/gyors-tepsis-burgonya-debrecenivel" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://image-api.nosalty.hu/nosalty/images/recipes/D3/I6/gyors-tepsis-burgonya-debrecenivel.jpeg?w=640&h=360&fit=crop&s=1f551d76c49a88a617d3b915c0f03ea4"
               class="img recipe-img"
@@ -1343,7 +1345,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.youtube.com/watch?v=9QVF3au2SjQ" class="recipe" target="_blank">
+          <a href="https://www.youtube.com/watch?v=9QVF3au2SjQ" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://streetkitchen.hu/wp-content/uploads/2022/01/teriyaki-csirkemell-2-1920x1280.jpg"
               class="img recipe-img"
@@ -1354,7 +1356,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.nosalty.hu/recept/szines-sonkas-tesztasalata" class="recipe" target="_blank">
+          <a href="https://www.nosalty.hu/recept/szines-sonkas-tesztasalata" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://kep.index.hu/1/0/2910/29102/291021/29102189_28f2e22337ef3355d2e17001d0a6f475_wm.jpg"
               class="img recipe-img"
@@ -1365,7 +1367,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.youtube.com/watch?v=dHOAF81Tk5Y" class="recipe" target="_blank">
+          <a href="https://www.youtube.com/watch?v=dHOAF81Tk5Y" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://kep.index.hu/1/0/2825/28257/282577/28257789_8fc70d88b71db18be573739ab8984aca_wm.jpg"
               class="img recipe-img"
@@ -1376,7 +1378,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.nosalty.hu/recept/klasszikus-toltott-kaposzta" class="recipe" target="_blank">
+          <a href="https://www.nosalty.hu/recept/klasszikus-toltott-kaposzta" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://image-api.nosalty.hu/nosalty/images/recipes/qN/ou/klasszikus-toltott-kaposzta.jpeg?w=640&h=360&fit=crop&s=d644d0f2313e6641857f0a1169106ba7"
               class="img recipe-img"
@@ -1387,7 +1389,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.youtube.com/watch?v=HXlZtPNC1T0" class="recipe" target="_blank">
+          <a href="https://www.youtube.com/watch?v=HXlZtPNC1T0" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://i.ytimg.com/vi/zI9z8Vb-Lbs/sddefault.jpg"
               class="img recipe-img"
@@ -1398,7 +1400,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.nosalty.hu/recept/konnyu-puha-turogomboc" class="recipe" target="_blank">
+          <a href="https://www.nosalty.hu/recept/konnyu-puha-turogomboc" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://kep.index.hu/1/0/3377/33771/337712/33771279_2586519_749deff37d032a2e06e78de181d09f53_wm.jpg"
               class="img recipe-img"
@@ -1409,7 +1411,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.youtube.com/watch?v=To4ea-D-IaM" class="recipe" target="_blank">
+          <a href="https://www.youtube.com/watch?v=To4ea-D-IaM" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://img-global.cpcdn.com/recipes/a434e9dbb2cb6428/680x482cq70/turos-csusza-felig-meddig-egeszsegesen-d-recept-foto.jpg"
               class="img recipe-img"
@@ -1420,7 +1422,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.youtube.com/watch?v=eCOKukbCaXs" class="recipe" target="_blank">
+          <a href="https://www.youtube.com/watch?v=eCOKukbCaXs" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="http://mentalfitnessguru.hu/wp-content/uploads/2019/03/vega-lasagne.jpg"
               class="img recipe-img"
@@ -1431,7 +1433,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="./recipes/ebed/vega_curry.html" class="recipe" target="_blank">
+          <a href="./recipes/ebed/vega_curry.html" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://image-api.nosalty.hu/nosalty/images/recipes/i6/XN/vega-korma-hamis-karfiol-pilaffal.jpeg?w=640&h=480&fit=crop&s=e4523433cc3cb9bc55af1009e4ab54ae"
               class="img recipe-img"
@@ -1442,7 +1444,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.nosalty.hu/recept/zsenge-borsofozelek" class="recipe" target="_blank">
+          <a href="https://www.nosalty.hu/recept/zsenge-borsofozelek" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://image-api.nosalty.hu/nosalty/images/recipes/pp/I4/kremes-zoldborsofozelek.jpeg?w=640&h=480&fit=crop&s=90e93a7b3ee220dd5459a468417021c8"
               class="img recipe-img"
@@ -1453,7 +1455,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://cookpad.com/hu/receptek/15537807-teszta-paprikas-csirke-izu-szosszal?ref=you_tab_my_recipes" class="recipe" target="_blank">
+          <a href="https://cookpad.com/hu/receptek/15537807-teszta-paprikas-csirke-izu-szosszal?ref=you_tab_my_recipes" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://img-global.cpcdn.com/recipes/8e843e686cf4e29b/680x482cq70/teszta-paprikas-csirke-izu-szosszal-recept-foto.jpg"
               class="img recipe-img"
@@ -1464,7 +1466,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.youtube.com/watch?v=3TcAyFS_nZc" class="recipe" target="_blank">
+          <a href="https://www.youtube.com/watch?v=3TcAyFS_nZc" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="../recipe_pix/gulyasleves.jpg"
               class="img recipe-img"
@@ -1475,7 +1477,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.youtube.com/watch?v=01k4dKXn8bs" class="recipe" target="_blank">
+          <a href="https://www.youtube.com/watch?v=01k4dKXn8bs" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://kep.index.hu/1/0/3735/37350/373505/37350531_a6dd4e74f34018f9d95d183a3262ee0e_wm.jpg"
               class="img recipe-img"
@@ -1486,7 +1488,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.youtube.com/watch?v=rm3cwdaScFo" class="recipe" target="_blank">
+          <a href="https://www.youtube.com/watch?v=rm3cwdaScFo" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://img-global.cpcdn.com/recipes/edbfca45fd5b4d36/1200x630cq70/photo.jpg"
               class="img recipe-img"
@@ -1497,7 +1499,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.youtube.com/watch?v=AOqxdSE36uU" class="recipe" target="_blank">
+          <a href="https://www.youtube.com/watch?v=AOqxdSE36uU" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://static.toiimg.com/thumb/56018571.cms?width=1200&height=900"
               class="img recipe-img"
@@ -1508,7 +1510,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.youtube.com/watch?v=oj5LbLzCLD4" class="recipe" target="_blank">
+          <a href="https://www.youtube.com/watch?v=oj5LbLzCLD4" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://img-global.cpcdn.com/recipes/9cbaa9c8fd19e65b/1200x630cq70/photo.jpg"
               class="img recipe-img"
@@ -1519,7 +1521,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.nosalty.hu/recept/izletes-fokhagymakremleves-sajtos-piritossal" class="recipe" target="_blank">
+          <a href="https://www.nosalty.hu/recept/izletes-fokhagymakremleves-sajtos-piritossal" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://image-api.nosalty.hu/nosalty/images/recipes/yv/jm/izletes-fokhagymakremleves-sajtos-piritossal.jpeg?w=640&h=480&fit=crop&s=dc5555d7ec394df6f87b809ca321543a"
               class="img recipe-img"
@@ -1530,7 +1532,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.youtube.com/watch?v=zQSgYkM70tc" class="recipe" target="_blank">
+          <a href="https://www.youtube.com/watch?v=zQSgYkM70tc" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://kep.index.hu/1/0/2910/29100/291000/29100005_a4c3ea3363c06c5ca316b11594e0018c_wm.jpg"
               class="img recipe-img"
@@ -1541,7 +1543,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.youtube.com/watch?v=eGbrjSXFli4" class="recipe" target="_blank">
+          <a href="https://www.youtube.com/watch?v=eGbrjSXFli4" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://www.mindmegette.hu/images/26/O/34456_egyszeru-grizgaluskaleves_n-201510170815.jpg"
               class="img recipe-img"
@@ -1552,7 +1554,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.nosalty.hu/recept/gulyasleves-1" class="recipe" target="_blank">
+          <a href="https://www.nosalty.hu/recept/gulyasleves-1" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://www.mindmegette.hu/images/28/O/35995_gulyasleves_450-201510170842.jpg"
               class="img recipe-img"
@@ -1563,7 +1565,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.youtube.com/watch?v=qWgq1AtHrM4&t=0s" class="recipe" target="_blank">
+          <a href="https://www.youtube.com/watch?v=qWgq1AtHrM4&t=0s" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://www.mindmegette.hu/images/202/O/tiszai-halaszle2.jpg"
               class="img recipe-img"
@@ -1574,7 +1576,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.youtube.com/watch?v=Qu7LAsIJb6E" class="recipe" target="_blank">
+          <a href="https://www.youtube.com/watch?v=Qu7LAsIJb6E" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="../recipe_pix/husgombocleves.jpg"
               class="img recipe-img"
@@ -1585,7 +1587,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.youtube.com/watch?v=bqkf24AeyHg" class="recipe" target="_blank">
+          <a href="https://www.youtube.com/watch?v=bqkf24AeyHg" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="http://2.bp.blogspot.com/-R81ktYwMC9Y/VMd3TxmLyyI/AAAAAAAAFBw/RfbtTc3UoKc/s1600/P1200026.JPG"
               class="img recipe-img"
@@ -1596,7 +1598,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.youtube.com/watch?v=br113e5gY6o" class="recipe" target="_blank">
+          <a href="https://www.youtube.com/watch?v=br113e5gY6o" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="http://csaladireceptkonyv.hu/storage/images/recipes/50306.jpg"
               class="img recipe-img"
@@ -1607,7 +1609,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.youtube.com/watch?v=ygZDSwB8MCY" class="recipe" target="_blank">
+          <a href="https://www.youtube.com/watch?v=ygZDSwB8MCY" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://img-global.cpcdn.com/recipes/7bea25990ce47d2e/1200x630cq70/photo.jpg"
               class="img recipe-img"
@@ -1618,7 +1620,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.youtube.com/watch?v=8VpbO2qAceg" class="recipe" target="_blank">
+          <a href="https://www.youtube.com/watch?v=8VpbO2qAceg" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://img-global.cpcdn.com/recipes/1e6343208eaeb136/1200x630cq70/photo.jpg"
               class="img recipe-img"
@@ -1629,7 +1631,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.nosalty.hu/recept/kerteszleves" class="recipe" target="_blank">
+          <a href="https://www.nosalty.hu/recept/kerteszleves" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://image-api.nosalty.hu/nosalty/images/recipes/F4/JD/kerteszleves.jpeg?w=640&h=480&fit=crop&s=0eb0576835a1334618e65a71ed50ce53"
               class="img recipe-img"
@@ -1640,7 +1642,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.youtube.com/watch?v=OggkvcfEwGI" class="recipe" target="_blank">
+          <a href="https://www.youtube.com/watch?v=OggkvcfEwGI" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://kep.index.hu/1/0/2910/29100/291006/29100635_58f1195c3e2be378bcf9ce3aee9b398e_wm.jpg"
               class="img recipe-img"
@@ -1651,7 +1653,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.youtube.com/watch?v=vtbat3fSZsQ" class="recipe" target="_blank">
+          <a href="https://www.youtube.com/watch?v=vtbat3fSZsQ" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="http://nagyikonyhatitkai.lapunk.hu/tarhely/nagyikonyhatitkai/kepek/201411/komenymagleves.jpg"
               class="img recipe-img"
@@ -1662,7 +1664,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.youtube.com/watch?v=571l3BwQAUk" class="recipe" target="_blank">
+          <a href="https://www.youtube.com/watch?v=571l3BwQAUk" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="../recipe_pix/krumplileves.jpg"
               class="img recipe-img"
@@ -1673,7 +1675,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.youtube.com/watch?v=ZJ04vwOsl8Q" class="recipe" target="_blank">
+          <a href="https://www.youtube.com/watch?v=ZJ04vwOsl8Q" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://i0.wp.com/vajling.hu/wp-content/uploads/2020/06/e01bbe56-2f2b-4d0a-8910-fffec676b330.jpg?fit=1000%2C750&ssl=1"
               class="img recipe-img"
@@ -1684,7 +1686,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="./recipes/leves/majgomboc_leves.html" class="recipe" target="_blank">
+          <a href="./recipes/leves/majgomboc_leves.html" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="./recipe_pix/majgomboc.JPG"
               class="img recipe-img"
@@ -1695,7 +1697,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.youtube.com/watch?v=LLHT6Z--lbM" class="recipe" target="_blank">
+          <a href="https://www.youtube.com/watch?v=LLHT6Z--lbM" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://img-global.cpcdn.com/recipes/886eac9939b57c0f/1200x630cq70/photo.jpg"
               class="img recipe-img"
@@ -1706,7 +1708,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.youtube.com/watch?v=aZKKd2vMVh4" class="recipe" target="_blank">
+          <a href="https://www.youtube.com/watch?v=aZKKd2vMVh4" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://img-global.cpcdn.com/recipes/999015fdc707cf7e/1200x630cq70/photo.jpg"
               class="img recipe-img"
@@ -1717,7 +1719,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.youtube.com/watch?v=yPMrotxgzSI" class="recipe" target="_blank">
+          <a href="https://www.youtube.com/watch?v=yPMrotxgzSI" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://kep.index.hu/1/0/1989/19896/198960/19896089_a11f41c00fdd7f575b64654344f2934d_wm.jpg"
               class="img recipe-img"
@@ -1728,7 +1730,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.youtube.com/watch?v=l4QkfKt5s60" class="recipe" target="_blank">
+          <a href="https://www.youtube.com/watch?v=l4QkfKt5s60" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://img-global.cpcdn.com/recipes/77eb2c90c2256cef/400x400cq70/photo.jpg"
               class="img recipe-img"
@@ -1739,7 +1741,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.youtube.com/watch?v=YvUB7_VOeEI" class="recipe" target="_blank">
+          <a href="https://www.youtube.com/watch?v=YvUB7_VOeEI" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://csirkemell-receptek.hu/wp-content/uploads/2020/05/tarkonyos_raguleves_csirkemellbol.jpg"
               class="img recipe-img"
@@ -1750,7 +1752,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.youtube.com/watch?v=Xc7D1C0p8fw" class="recipe" target="_blank">
+          <a href="https://www.youtube.com/watch?v=Xc7D1C0p8fw" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://cdn.penzcentrum.hu/images/content/202011/20-zellerkraOmleves.jpg"
               class="img recipe-img"
@@ -1761,7 +1763,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.youtube.com/watch?v=VTo8D999aY4" class="recipe" target="_blank">
+          <a href="https://www.youtube.com/watch?v=VTo8D999aY4" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://img-global.cpcdn.com/recipes/4200e60f2e4fe95d/1200x630cq70/photo.jpg"
               class="img recipe-img"
@@ -1772,7 +1774,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.youtube.com/watch?v=YpOEBXW4a4U" class="recipe" target="_blank">
+          <a href="https://www.youtube.com/watch?v=YpOEBXW4a4U" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://image-api.nosalty.hu/nosalty/images/recipes/Hi/5G/tavaszi-vegyes-zoldsegleves.jpeg?w=640&h=360&fit=crop&s=14f8cb2eee5dab49b9af18be0cbb6ec8"
               class="img recipe-img"
@@ -1783,7 +1785,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://streetkitchen.hu/receptek/afonyas-grilled-cheese-szendvics/" class="recipe" target="_blank">
+          <a href="https://streetkitchen.hu/receptek/afonyas-grilled-cheese-szendvics/" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://streetkitchen.hu/wp-content/uploads/2018/04/camembert-afonyas-szendvics1.jpg"
               class="img recipe-img"
@@ -1793,7 +1795,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.nosalty.hu/recept/alap-tojaskrem" class="recipe" target="_blank">
+          <a href="https://www.nosalty.hu/recept/alap-tojaskrem" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://image-api.nosalty.hu/nosalty/images/recipes/5U/wJ/alap-tojaskrem.jpeg?w=640&h=360&fit=crop&s=0873179a47fb30f19a601529459cf755"
               class="img recipe-img"
@@ -1803,7 +1805,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.mindmegette.hu/boseges-fogas-ami-estig-eltelit-a-tokeletes-angol-reggeli-titka-49820/" class="recipe" target="_blank">
+          <a href="https://www.mindmegette.hu/boseges-fogas-ami-estig-eltelit-a-tokeletes-angol-reggeli-titka-49820/" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://kep.index.hu/1/0/3123/31235/312350/31235053_489c1e89cb76922152f914b48b7f1ac7_wm.jpg"
               class="img recipe-img"
@@ -1813,7 +1815,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://streetkitchen.hu/a-legjobb-reggelik/babkremes-sonkas-sajtos-gofri/" class="recipe" target="_blank">
+          <a href="https://streetkitchen.hu/a-legjobb-reggelik/babkremes-sonkas-sajtos-gofri/" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://streetkitchen.hu/wp-content/uploads/2020/04/babkremes-francia-gofri-2-1920x1280.jpg"
               class="img recipe-img"
@@ -1823,7 +1825,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://streetkitchen.hu/bespajzolva/babos-kolbaszos-piritos/" class="recipe" target="_blank">
+          <a href="https://streetkitchen.hu/bespajzolva/babos-kolbaszos-piritos/" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://streetkitchen.hu/wp-content/uploads/2020/03/babos-kolbaszos-piritos-1280x1920.jpg"
               class="img recipe-img"
@@ -1833,7 +1835,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.youtube.com/watch?v=8SnVAq1Nf8w&list=PLwAdRmP0Ovd_UyUq8FdJLhX-1hI743ETo&index=3" class="recipe" target="_blank">
+          <a href="https://www.youtube.com/watch?v=8SnVAq1Nf8w&list=PLwAdRmP0Ovd_UyUq8FdJLhX-1hI743ETo&index=3" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://image-api.nosalty.hu/nosalty/images/recipes/Ng/fO/baconos-sajtos-roszti.jpeg?w=640&h=480&fit=crop&s=692e42b35752d5b2cd0c2ebe5756031f"
               class="img recipe-img"
@@ -1843,7 +1845,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://streetkitchen.hu/a-legjobb-reggelik/bundaskenyer-szendvics/" class="recipe" target="_blank">
+          <a href="https://streetkitchen.hu/a-legjobb-reggelik/bundaskenyer-szendvics/" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="../recipe_pix/bundaskenyer_szendvics.jpg"
               class="img recipe-img"
@@ -1853,7 +1855,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.youtube.com/watch?v=YX30J2SHPvg" class="recipe" target="_blank">
+          <a href="https://www.youtube.com/watch?v=YX30J2SHPvg" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://www.mindmegette.hu/images/19/O/26725_csirkes-szendvics_n-201510170619.jpg"
               class="img recipe-img"
@@ -1863,7 +1865,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.youtube.com/watch?v=7Xh2AR5gYgw" class="recipe" target="_blank">
+          <a href="https://www.youtube.com/watch?v=7Xh2AR5gYgw" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://jajabakes.com/wp-content/uploads/2019/05/egg-mayo-sandwich-2-720x720.jpg"
               class="img recipe-img"
@@ -1873,7 +1875,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://streetkitchen.hu/alapkeszitmenyek/gombas-melegszendvicskrem/" class="recipe" target="_blank">
+          <a href="https://streetkitchen.hu/alapkeszitmenyek/gombas-melegszendvicskrem/" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://streetkitchen.hu/wp-content/uploads/2020/04/gombas-melegszendvicskrem_2-egyedi-1-1327x1920.jpg"
               class="img recipe-img"
@@ -1883,7 +1885,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://youtu.be/CNpSIIcQ00Y?list=PLwAdRmP0Ovd_UyUq8FdJLhX-1hI743ETo&t=76" class="recipe" target="_blank">
+          <a href="https://youtu.be/CNpSIIcQ00Y?list=PLwAdRmP0Ovd_UyUq8FdJLhX-1hI743ETo&t=76" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://www.walderwellness.com/wp-content/uploads/2019/10/Gourmet-Grilled-Cheese-Sandwich-Walder-Wellness-5-500x500.jpg"
               class="img recipe-img"
@@ -1893,7 +1895,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.nosalty.hu/recept/gyors-amerikai-palacsinta" class="recipe" target="_blank">
+          <a href="https://www.nosalty.hu/recept/gyors-amerikai-palacsinta" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="../recipe_pix/amcsi_palacsinta.jpg"
               class="img recipe-img"
@@ -1903,7 +1905,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.nosalty.hu/recept/hagymas-csipos-bab-bud-spencer-modra" class="recipe" target="_blank">
+          <a href="https://www.nosalty.hu/recept/hagymas-csipos-bab-bud-spencer-modra" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://img-global.cpcdn.com/recipes/8341a8e88d3cfefd/1200x630cq70/photo.jpg"
               class="img recipe-img"
@@ -1913,7 +1915,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.youtube.com/watch?v=JAQhfRrDUg8&list=PLwAdRmP0Ovd_UyUq8FdJLhX-1hI743ETo&index=5" class="recipe" target="_blank">
+          <a href="https://www.youtube.com/watch?v=JAQhfRrDUg8&list=PLwAdRmP0Ovd_UyUq8FdJLhX-1hI743ETo&index=5" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://i.ytimg.com/vi/MhjSAmtn6Ho/maxresdefault.jpg"
               class="img recipe-img"
@@ -1923,7 +1925,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://cookpad.com/hu/kereses/melegszendvicskr%C3%A9m" class="recipe" target="_blank">
+          <a href="https://cookpad.com/hu/kereses/melegszendvicskr%C3%A9m" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://annuskam.hu/wp-content/uploads/2021/05/pizzas-melegszendvics-958f-500x500.jpg"
               class="img recipe-img"
@@ -1933,7 +1935,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.nosalty.hu/recept/lilahagymas-tojaskrem" class="recipe" target="_blank">
+          <a href="https://www.nosalty.hu/recept/lilahagymas-tojaskrem" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://i.pinimg.com/736x/a9/b0/f6/a9b0f6042ceba7c430468b88b5371254.jpg"
               class="img recipe-img"
@@ -1943,7 +1945,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://streetkitchen.hu/szendvicsek-es-burgerek/muffuletta/" class="recipe" target="_blank">
+          <a href="https://streetkitchen.hu/szendvicsek-es-burgerek/muffuletta/" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://static01.nyt.com/images/2019/02/24/dining/muffaletta/merlin_150672987_2c385b61-c216-48a7-a273-80db45c78551-articleLarge.jpg"
               class="img recipe-img"
@@ -1953,7 +1955,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://streetkitchen.hu/szendvicsek-es-burgerek/pesztos-pulykas-grillszendvics/" class="recipe" target="_blank">
+          <a href="https://streetkitchen.hu/szendvicsek-es-burgerek/pesztos-pulykas-grillszendvics/" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://streetkitchen.hu/wp-content/uploads/2019/05/pesztos-pulykas-grillszendvics_2-egyedi-1280x1920.jpg"
               class="img recipe-img"
@@ -1963,7 +1965,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.youtube.com/watch?v=ne15z0z8yUg" class="recipe" target="_blank">
+          <a href="https://www.youtube.com/watch?v=ne15z0z8yUg" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://s1.dmcdn.net/v/L1zGC1PRq6ZtueDK2/x1080"
               class="img recipe-img"
@@ -1973,7 +1975,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://streetkitchen.hu/alapkeszitmenyek/a-legegyszerubb-tepertokrem/" class="recipe" target="_blank">
+          <a href="https://streetkitchen.hu/alapkeszitmenyek/a-legegyszerubb-tepertokrem/" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="http://kep.cdn.indexvas.hu/1/0/1577/15770/157702/15770231_088cbd60313626c1254ea446c5478b20_wm.jpg"
               class="img recipe-img"
@@ -1983,7 +1985,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.nosalty.hu/ajanlo/top-13-egeszseges-tonhalsalata" class="recipe" target="_blank">
+          <a href="https://www.nosalty.hu/ajanlo/top-13-egeszseges-tonhalsalata" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://kep.index.hu/1/0/3669/36698/366984/36698409_2803135_94fc2e46cfeedd17e90cc07e52c05e2a_wm.jpg"
               class="img recipe-img"
@@ -1993,7 +1995,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.youtube.com/watch?v=FdXKcMC2IpU&t=259s" class="recipe" target="_blank">
+          <a href="https://www.youtube.com/watch?v=FdXKcMC2IpU&t=259s" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://blog.childrenofamerica.com/wp-content/uploads/2020/02/150-Healthy-Tuna-and-Quinoa-Patties-500x331.jpg"
               class="img recipe-img"
@@ -2003,7 +2005,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://youtu.be/FdXKcMC2IpU?t=87" class="recipe" target="_blank">
+          <a href="https://youtu.be/FdXKcMC2IpU?t=87" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://cnd.vous.hu/img/inline/tonhalas-fasirt1.jpg"
               class="img recipe-img"
@@ -2013,7 +2015,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://cookpad.com/hu/receptek/15834960-tortillas-reggeli?ref=search&search_term=reggeli" class="recipe" target="_blank">
+          <a href="https://cookpad.com/hu/receptek/15834960-tortillas-reggeli?ref=search&search_term=reggeli" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://img-global.cpcdn.com/recipes/7d6c2eee8159c7c6/1200x630cq70/photo.jpg"
               class="img recipe-img"
@@ -2023,7 +2025,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.nosalty.hu/recept/3bit-szelet-csokimazzal" class="recipe" target="_blank">
+          <a href="https://www.nosalty.hu/recept/3bit-szelet-csokimazzal" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://img-global.cpcdn.com/recipes/2a66edb8ae23852f/1200x630cq70/photo.jpg"
               class="img recipe-img"
@@ -2033,7 +2035,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.youtube.com/watch?v=xgnsr5jrecU" class="recipe" target="_blank">
+          <a href="https://www.youtube.com/watch?v=xgnsr5jrecU" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://rantotthuswokban.bmintbalazs.com/wp-content/uploads/amerikai_palacsinta_afonyaval.jpg"
               class="img recipe-img"
@@ -2043,7 +2045,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.nosalty.hu/recept/bagolyszem-2" class="recipe" target="_blank">
+          <a href="https://www.nosalty.hu/recept/bagolyszem-2" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://image-api.nosalty.hu/nosalty/images/recipes/21/vo/bagolyszem-2.jpeg?w=640&h=480&fit=crop&s=72cd30bd0d44f1cfeb966779e769b9f2"
               class="img recipe-img"
@@ -2053,7 +2055,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.nosalty.hu/recept/beigli-karacsonyra" class="recipe" target="_blank">
+          <a href="https://www.nosalty.hu/recept/beigli-karacsonyra" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://img-global.cpcdn.com/recipes/ca36dca4abd2e245/680x482cq70/beigli-recept-foto.jpg"
               class="img recipe-img"
@@ -2063,7 +2065,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.mindmegette.hu/egyszeru-lekvaros-bukta.recept/" class="recipe" target="_blank">
+          <a href="https://www.mindmegette.hu/egyszeru-lekvaros-bukta.recept/" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://img-global.cpcdn.com/recipes/e36627dfe76ca11b/1200x630cq70/photo.jpg"
               class="img recipe-img"
@@ -2073,7 +2075,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.nosalty.hu/recept/repatorta" class="recipe" target="_blank">
+          <a href="https://www.nosalty.hu/recept/repatorta" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://image-api.nosalty.hu/nosalty/images/recipes/km/5j/repatorta.jpeg?w=640&h=640&fit=crop&s=57d7419383213def4941f4085d72a5b3"
               class="img recipe-img"
@@ -2083,7 +2085,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.mindmegette.hu/sajttorta-cheesecake.recept/" class="recipe" target="_blank">
+          <a href="https://www.mindmegette.hu/sajttorta-cheesecake.recept/" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://natashaskitchen.com/wp-content/uploads/2020/05/Pefect-Cheesecake-7.jpg"
               class="img recipe-img"
@@ -2093,7 +2095,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.nosalty.hu/recept/gyors-nutellas-brownie" class="recipe" target="_blank">
+          <a href="https://www.nosalty.hu/recept/gyors-nutellas-brownie" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://image-api.nosalty.hu/nosalty/images/recipes/57/qq/gyors-nutellas-brownie.jpeg?w=640&h=640&fit=crop&s=e980f9ad54379f9ec2f9cf3d2c1f5171"
               class="img recipe-img"
@@ -2103,7 +2105,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.delish.com/cooking/recipe-ideas/recipes/a52644/chocolate-fudge-cake-recip" class="recipe" target="_blank">
+          <a href="https://www.delish.com/cooking/recipe-ideas/recipes/a52644/chocolate-fudge-cake-recip" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://hips.hearstapps.com/delish/assets/17/16/1492694005-108-sein-9781101967140-art-r1-1.jpg"
               class="img recipe-img"
@@ -2113,7 +2115,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.mindmegette.hu/citrom-tarte.recept/" class="recipe" target="_blank">
+          <a href="https://www.mindmegette.hu/citrom-tarte.recept/" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://kencze.hu/wp-content/uploads/2021/01/Citrom-tart-05.jpg"
               class="img recipe-img"
@@ -2123,7 +2125,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.nosalty.hu/recept/csokibomba" class="recipe" target="_blank">
+          <a href="https://www.nosalty.hu/recept/csokibomba" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://image-api.nosalty.hu/nosalty/images/recipes/KB/QW/csokibomba.jpeg?w=640&h=640&fit=crop&s=acb92ac626fd74ecd39b0b2565872b5a"
               class="img recipe-img"
@@ -2133,7 +2135,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.mindmegette.hu/egyszeru-csokitorta.recept/" class="recipe" target="_blank">
+          <a href="https://www.mindmegette.hu/egyszeru-csokitorta.recept/" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://www.mindmegette.hu/images/157/O/crop_201607062250_thinkstockphotos-531869654.jpg"
               class="img recipe-img"
@@ -2143,7 +2145,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.mindmegette.hu/kakaos-vanilias-csiga.recept/" class="recipe" target="_blank">
+          <a href="https://www.mindmegette.hu/kakaos-vanilias-csiga.recept/" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://www.mindmegette.hu/images/10/O/18182_ketszinu-csiga-keksz_n-201510170418.jpg"
               class="img recipe-img"
@@ -2153,7 +2155,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.nosalty.hu/recept/pattogos-suti-ahogy-mira-kesziti" class="recipe" target="_blank">
+          <a href="https://www.nosalty.hu/recept/pattogos-suti-ahogy-mira-kesziti" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="../recipe_pix/pattogos_suti.jpg"
               class="img recipe-img"
@@ -2163,7 +2165,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.mindmegette.hu/csoroge-fank.recept/" class="recipe" target="_blank">
+          <a href="https://www.mindmegette.hu/csoroge-fank.recept/" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="../recipe_pix/csoroge.jpeg"
               class="img recipe-img"
@@ -2173,7 +2175,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.nosalty.hu/recept/daralos-keksz" class="recipe" target="_blank">
+          <a href="https://www.nosalty.hu/recept/daralos-keksz" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://nlc.p3k.hu/uploads/2018/03/dar%C3%A1l%C3%B3s.jpg"
               class="img recipe-img"
@@ -2183,7 +2185,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="./recipes/desszert/egytojasos.html" class="recipe" target="_blank">
+          <a href="./recipes/desszert/egytojasos.html" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="../recipe_pix/egytojasos_torta.jpg"
               class="img recipe-img"
@@ -2193,7 +2195,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.nosalty.hu/recept/hagyomanyos-edes-fank" class="recipe" target="_blank">
+          <a href="https://www.nosalty.hu/recept/hagyomanyos-edes-fank" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://image-api.nosalty.hu/nosalty/images/recipes/Yn/BH/hagyomanyos-edes-fank.jpeg?w=640&h=360&fit=crop&s=ce04cb3bb18030e0bf703e3f29241264"
               class="img recipe-img"
@@ -2203,7 +2205,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.youtube.com/watch?v=w2Hzz-cIEJs" class="recipe" target="_blank">
+          <a href="https://www.youtube.com/watch?v=w2Hzz-cIEJs" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="http://1.bp.blogspot.com/-Qg9BIKMimMM/UBJ1w0aqb7I/AAAAAAAABqk/IX6BNfPnXHI/s1600/Foszls-fonott-kalcs-FV.jpg"
               class="img recipe-img"
@@ -2213,7 +2215,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.nosalty.hu/recept/gyors-goffri" class="recipe" target="_blank">
+          <a href="https://www.nosalty.hu/recept/gyors-goffri" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://st.depositphotos.com/1003272/4045/i/600/depositphotos_40459217-stock-photo-belgium-waffles.jpg"
               class="img recipe-img"
@@ -2223,7 +2225,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://streetkitchen.hu/meguszos-sutik/klasszik-gyumolcstorta/" class="recipe" target="_blank">
+          <a href="https://streetkitchen.hu/meguszos-sutik/klasszik-gyumolcstorta/" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://streetkitchen.hu/wp-content/uploads/2020/07/klasszik-gyumolcstorta-egyedi-scaled.jpg"
               class="img recipe-img"
@@ -2233,7 +2235,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://magyarkonyhaonline.hu/receptek/tokeletes-hokifli" class="recipe" target="_blank">
+          <a href="https://magyarkonyhaonline.hu/receptek/tokeletes-hokifli" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://magyarkonyhaonline.hu/storage/media/images/2020/07/20/OG.hokifli.jpg"
               class="img recipe-img"
@@ -2243,7 +2245,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://cookpad.com/hu/receptek/12404770-jugo-kifli" class="recipe" target="_blank">
+          <a href="https://cookpad.com/hu/receptek/12404770-jugo-kifli" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://img-global.cpcdn.com/recipes/95436fc6000835e1/1200x630cq70/photo.jpg"
               class="img recipe-img"
@@ -2253,7 +2255,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.nosalty.hu/recept/kakaos-csiga-kelt-tesztabol-doggy-da-cheftol" class="recipe" target="_blank">
+          <a href="https://www.nosalty.hu/recept/kakaos-csiga-kelt-tesztabol-doggy-da-cheftol" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://image-api.nosalty.hu/nosalty/images/recipes/77/l8/kakaos-csiga-kelt-tesztabol-doggy-da-cheftol.jpeg?w=640&h=360&fit=crop&s=a9c42c501e13c5ef9ec83ea0ff2ec8db"
               class="img recipe-img"
@@ -2263,7 +2265,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.nosalty.hu/recept/caramel-shortbread" class="recipe" target="_blank">
+          <a href="https://www.nosalty.hu/recept/caramel-shortbread" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://image-api.nosalty.hu/nosalty/images/recipes/Ot/cQ/caramel-shortbread.jpeg?w=640&h=640&fit=crop&s=c74f957c99b9210551bb81f67c04d085"
               class="img recipe-img"
@@ -2273,7 +2275,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://egyszerugyorsreceptek.com/kevert-turos-csokis-szelet-nagymama-modra-ha-egyszer-megkostolod-kedvenced-lesz/" class="recipe" target="_blank">
+          <a href="https://egyszerugyorsreceptek.com/kevert-turos-csokis-szelet-nagymama-modra-ha-egyszer-megkostolod-kedvenced-lesz/" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://egyszerugyorsreceptek.com/wp-content/uploads/2017/09/kevert_turos_-csokis_szelet.jpg"
               class="img recipe-img"
@@ -2283,7 +2285,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://femina.hu/recept/dios-kevert-suti-recept/" class="recipe" target="_blank">
+          <a href="https://femina.hu/recept/dios-kevert-suti-recept/" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="http://kep.cdn.indexvas.hu/1/0/1577/15779/157799/15779923_14c114bbf45dcf065343728553383f93_wm.jpg"
               class="img recipe-img"
@@ -2293,7 +2295,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://cookpad.com/hu/receptek/8750251-langallo-hazi-kenyerlangos" class="recipe" target="_blank">
+          <a href="https://cookpad.com/hu/receptek/8750251-langallo-hazi-kenyerlangos" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://img-global.cpcdn.com/recipes/05281156b6e2eafd/680x482cq70/langallo-hazi-kenyerlangos-recept-foto.jpg"
               class="img recipe-img"
@@ -2303,7 +2305,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://cookpad.com/hu/receptek/11316585-kepviselofank" class="recipe" target="_blank">
+          <a href="https://cookpad.com/hu/receptek/11316585-kepviselofank" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://img-global.cpcdn.com/recipes/f18fb4cab61296d1/1200x630cq70/photo.jpg"
               class="img recipe-img"
@@ -2313,7 +2315,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.topreceptek.hu/recept/hazi-kinder-bueno-szelet-ahogy-mi-szeretjuk-r658" class="recipe" target="_blank">
+          <a href="https://www.topreceptek.hu/recept/hazi-kinder-bueno-szelet-ahogy-mi-szeretjuk-r658" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://i.ytimg.com/vi/pEapitKCEk8/maxresdefault.jpg"
               class="img recipe-img"
@@ -2323,7 +2325,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.mindmegette.hu/kokuszgolyo-pofonegyszeruen.recept/" class="recipe" target="_blank">
+          <a href="https://www.mindmegette.hu/kokuszgolyo-pofonegyszeruen.recept/" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://www.mindmegette.hu/images/179/O/crop_201701191854_kokuszgolyo.jpg"
               class="img recipe-img"
@@ -2333,7 +2335,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.mindmegette.hu/hagyomanyos-kokuszkocka.recept/" class="recipe" target="_blank">
+          <a href="https://www.mindmegette.hu/hagyomanyos-kokuszkocka.recept/" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="../recipe_pix/kokuszkocka.jpg"
               class="img recipe-img"
@@ -2343,7 +2345,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.mindmegette.hu/hazi-kremes-egyszeruen-finoman.recept/" class="recipe" target="_blank">
+          <a href="https://www.mindmegette.hu/hazi-kremes-egyszeruen-finoman.recept/" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://www.mindmegette.hu/images/240/O/shutterstock_392936185.jpg"
               class="img recipe-img"
@@ -2353,7 +2355,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.mindmegette.hu/pehelykonnyu-burgonyas-pogacsa.recept/" class="recipe" target="_blank">
+          <a href="https://www.mindmegette.hu/pehelykonnyu-burgonyas-pogacsa.recept/" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="../recipe_pix/krumplis_pogi.jpg"
               class="img recipe-img"
@@ -2363,7 +2365,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://streetkitchen.hu/pekseg/kurtoskalacs-sutoben/" class="recipe" target="_blank">
+          <a href="https://streetkitchen.hu/pekseg/kurtoskalacs-sutoben/" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://streetkitchen.hu/wp-content/uploads/2019/08/kurtos-kalacs-egyedi.jpg"
               class="img recipe-img"
@@ -2373,7 +2375,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://divany.hu/offline/2020/02/28/tokeletes-langos-recept/" class="recipe" target="_blank">
+          <a href="https://divany.hu/offline/2020/02/28/tokeletes-langos-recept/" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://kep.index.hu/1/0/3166/31669/316690/31669061_2430695_ab0a2cfa00e217e2a3c7041176b570f4_wm.jpg"
               class="img recipe-img"
@@ -2383,7 +2385,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.nosalty.hu/recept/linzer-1" class="recipe" target="_blank">
+          <a href="https://www.nosalty.hu/recept/linzer-1" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://image-api.nosalty.hu/nosalty/images/recipes/Wd/u3/linzer-1.jpeg?w=640&h=360&fit=crop&s=666741ffa089f383e56da8ace4d9ed88"
               class="img recipe-img"
@@ -2393,7 +2395,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="hhttps://www.mindmegette.hu/tejszines-madartejszelet.recept/" class="recipe" target="_blank">
+          <a href="hhttps://www.mindmegette.hu/tejszines-madartejszelet.recept/" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="../recipe_pix/madartej_szelet.jpg"
               class="img recipe-img"
@@ -2403,7 +2405,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.mindmegette.hu/egyszeru-bogres-mikros-suti-nutellaval.recept/" class="recipe" target="_blank">
+          <a href="https://www.mindmegette.hu/egyszeru-bogres-mikros-suti-nutellaval.recept/" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="../recipe_pix/mikros_suti.jpg"
               class="img recipe-img"
@@ -2413,7 +2415,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://streetkitchen.hu/alapkeszitmenyek/a-legegyszerubb-tepertokrem/" class="recipe" target="_blank">
+          <a href="https://streetkitchen.hu/alapkeszitmenyek/a-legegyszerubb-tepertokrem/" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://image-api.nosalty.hu/nosalty/images/recipes/Xy/16/legegyszerubb-muffin.jpeg?w=640&h=480&fit=crop&s=e8723318b5f7b9be48652c5e42bb9a21"
               class="img recipe-img"
@@ -2423,7 +2425,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://egyszerugyorsreceptek.com/nap-es-ej-szelet-egy-nagyon-egyszeru-es-nagyon-finom-sutemeny-ha-gyors-edessegre-vagysz/" class="recipe" target="_blank">
+          <a href="https://egyszerugyorsreceptek.com/nap-es-ej-szelet-egy-nagyon-egyszeru-es-nagyon-finom-sutemeny-ha-gyors-edessegre-vagysz/" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://egyszerugyorsreceptek.com/wp-content/uploads/2018/02/Nap_-es-_ej_szelet.jpg"
               class="img recipe-img"
@@ -2433,7 +2435,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://receptneked.hu/kreativ-receptek/nutellas-napraforgo-kalacs/" class="recipe" target="_blank">
+          <a href="https://receptneked.hu/kreativ-receptek/nutellas-napraforgo-kalacs/" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://receptneked.hu/wp-content/uploads/2018/05/Nutellu00e1s-napraforgu00f3-kalu00e1cs.jpg"
               class="img recipe-img"
@@ -2443,7 +2445,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.topreceptek.hu/recept/piskotas-csokolades-mogyoros-ozgerinc-sutemeny-r288" class="recipe" target="_blank">
+          <a href="https://www.topreceptek.hu/recept/piskotas-csokolades-mogyoros-ozgerinc-sutemeny-r288" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://www.topreceptek.hu/upload/00337114_2d2f0fea427385_full.jpg"
               class="img recipe-img"
@@ -2453,7 +2455,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.mindmegette.hu/csokikremes-palacsinta.recept/" class="recipe" target="_blank">
+          <a href="https://www.mindmegette.hu/csokikremes-palacsinta.recept/" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://www.mindmegette.hu/images/181/O/palacsinta_csokikrem.jpg"
               class="img recipe-img"
@@ -2463,7 +2465,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://receptneked.hu/edes-sutemenyek/turos-sutik/paplan-suti/" class="recipe" target="_blank">
+          <a href="https://receptneked.hu/edes-sutemenyek/turos-sutik/paplan-suti/" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://receptneked.hu/wp-content/uploads/2014/11/1000_10929092_795560440510932_465030311543686445_n_20150122_083305-480x299.jpg"
               class="img recipe-img"
@@ -2473,7 +2475,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.mindmegette.hu/piskota-csokiontettel.recept/" class="recipe" target="_blank">
+          <a href="https://www.mindmegette.hu/piskota-csokiontettel.recept/" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="../recipe_pix/menzas_piskota.jpg"
               class="img recipe-img"
@@ -2483,7 +2485,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.mindmegette.hu/egyszeru-piskotatekercs.recept/" class="recipe" target="_blank">
+          <a href="https://www.mindmegette.hu/egyszeru-piskotatekercs.recept/" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="../recipe_pix/piskotatekercs.jpg"
               class="img recipe-img"
@@ -2493,7 +2495,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://hu.pinterest.com/pin/201254677086298933/" class="recipe" target="_blank">
+          <a href="https://hu.pinterest.com/pin/201254677086298933/" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://i.pinimg.com/originals/bd/72/45/bd7245bd19c2e264d811bb29ec5d6179.png"
               class="img recipe-img"
@@ -2503,7 +2505,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://receptneked.hu/sos-sutemenyek/pihe-puha-pogacsa/" class="recipe" target="_blank">
+          <a href="https://receptneked.hu/sos-sutemenyek/pihe-puha-pogacsa/" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://receptneked.hu/wp-content/uploads/2014/06/Pihe-puha-pog%C3%A1csa.jpg"
               class="img recipe-img"
@@ -2513,7 +2515,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="./recipes/desszert/pudingos_almas_lepeny.html" class="recipe" target="_blank">
+          <a href="./recipes/desszert/pudingos_almas_lepeny.html" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="./recipe_pix/pudingos_almas_lepeny.jpg"
               class="img recipe-img"
@@ -2523,7 +2525,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.nosalty.hu/recept/pudingos-tejfolos-szelet-gizitol" class="recipe" target="_blank">
+          <a href="https://www.nosalty.hu/recept/pudingos-tejfolos-szelet-gizitol" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://image-api.nosalty.hu/nosalty/images/recipes/iQ/88/pudingos-tejfolos-szelet-gizitol.jpeg?w=640&h=360&fit=crop&s=f65062d2ddd2f893f0f49b568d0a0317"
               class="img recipe-img"
@@ -2533,7 +2535,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://cookpad.com/hu/receptek/10281589-ropogos-sajtos-rud" class="recipe" target="_blank">
+          <a href="https://cookpad.com/hu/receptek/10281589-ropogos-sajtos-rud" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://img-global.cpcdn.com/recipes/4d34ca92970cd039/1200x630cq70/photo.jpg"
               class="img recipe-img"
@@ -2543,7 +2545,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://receptneked.hu/sos-sutemenyek/pihe-puha-pogacsa/" class="recipe" target="_blank">
+          <a href="https://receptneked.hu/sos-sutemenyek/pihe-puha-pogacsa/" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://image-api.nosalty.hu/nosalty/images/recipes/bB/JD/sajtos-vajas-kifli.jpeg?w=640&h=640&fit=crop&s=1c7598641f1cdb23634dec501a458892"
               class="img recipe-img"
@@ -2553,7 +2555,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.nosalty.hu/recept/habkonnyu-sajtos-rolo" class="recipe" target="_blank">
+          <a href="https://www.nosalty.hu/recept/habkonnyu-sajtos-rolo" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://image-api.nosalty.hu/nosalty/images/recipes/f3/UZ/habkonnyu-sajtos-rolo.jpeg?w=640&h=640&fit=crop&s=9f1f1296f062e006ed34105872c5528a"
               class="img recipe-img"
@@ -2563,7 +2565,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.nosalty.hu/recept/legegyszerubb-sajtos-rud" class="recipe" target="_blank">
+          <a href="https://www.nosalty.hu/recept/legegyszerubb-sajtos-rud" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://image-api.nosalty.hu/nosalty/images/recipes/Q5/FT/legegyszerubb-sajtos-rud.jpeg?w=640&h=640&fit=crop&s=f25d152c3e94f16eed7321b99ebf235d"
               class="img recipe-img"
@@ -2573,7 +2575,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.mindmegette.hu/sajtos-perec-aprosutemeny.recept/" class="recipe" target="_blank">
+          <a href="https://www.mindmegette.hu/sajtos-perec-aprosutemeny.recept/" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="../recipe_pix/sajtos_sosperec.jpg"
               class="img recipe-img"
@@ -2583,7 +2585,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.nosalty.hu/recept/sajtos-taller-ahogy-limia-kesziti" class="recipe" target="_blank">
+          <a href="https://www.nosalty.hu/recept/sajtos-taller-ahogy-limia-kesziti" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://image-api.nosalty.hu/nosalty/images/recipes/Wj/Hv/sajtos-taller-ahogy-limia-kesziti.jpeg?w=640&h=360&fit=crop&s=e4ae3de055915d3e7c38f4f2ac58b67f"
               class="img recipe-img"
@@ -2593,7 +2595,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://cookpad.com/hu/receptek/13036210-somloi-galuska-szenhidrat-csokkentett" class="recipe" target="_blank">
+          <a href="https://cookpad.com/hu/receptek/13036210-somloi-galuska-szenhidrat-csokkentett" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://img-global.cpcdn.com/recipes/31fc7a2624b2ee99/1200x630cq70/photo.jpg"
               class="img recipe-img"
@@ -2603,7 +2605,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.nosalty.hu/recept/sport-szelet-3" class="recipe" target="_blank">
+          <a href="https://www.nosalty.hu/recept/sport-szelet-3" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://image-api.nosalty.hu/nosalty/images/recipes/cs/99/sport-szelet-3.jpeg?w=640&h=640&fit=crop&s=7a1955ff5070d352a1d274c836481749"
               class="img recipe-img"
@@ -2613,7 +2615,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://sobors.hu/receptek/tiramisu-tojas-nelkul-recept/" class="recipe" target="_blank">
+          <a href="https://sobors.hu/receptek/tiramisu-tojas-nelkul-recept/" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://kep.index.hu/1/0/3872/38724/387244/38724421_2953953_9d69b005425fa8fb1773771cdeee4f76_wm.jpg"
               class="img recipe-img"
@@ -2623,7 +2625,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.mindmegette.hu/sajtos-turos-rud.recept/" class="recipe" target="_blank">
+          <a href="https://www.mindmegette.hu/sajtos-turos-rud.recept/" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://www.mindmegette.hu/images/198/O/crop_201707211811_sajtosrud.jpg"
               class="img recipe-img"
@@ -2633,7 +2635,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.nosalty.hu/recept/csokis-vanilias-karika" class="recipe" target="_blank">
+          <a href="https://www.nosalty.hu/recept/csokis-vanilias-karika" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://image-api.nosalty.hu/nosalty/images/recipes/gD/qi/csokis-vanilias-karika.jpeg?w=640&h=360&fit=crop&s=c74d048616864b5aac2ae6351981d500"
               class="img recipe-img"
@@ -2643,7 +2645,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.youtube.com/watch?v=ct1qELSyQiM" class="recipe" target="_blank">
+          <a href="https://www.youtube.com/watch?v=ct1qELSyQiM" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://i.ytimg.com/vi/ct1qELSyQiM/maxresdefault.jpg"
               class="img recipe-img"
@@ -2653,7 +2655,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="https://www.nosalty.hu/recept/hagyomanyos-zserbo-viciko-konyhajabol" class="recipe" target="_blank">
+          <a href="https://www.nosalty.hu/recept/hagyomanyos-zserbo-viciko-konyhajabol" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://image-api.nosalty.hu/nosalty/images/recipes/CE/J9/hagyomanyos-zserbo-viciko-konyhajabol.jpeg?w=640&h=360&fit=crop&s=61300960afb01b24ba7b401d45d05f25"
               class="img recipe-img"
@@ -2663,7 +2665,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="./recipes/sauce/ranch_sauce.html" class="recipe" target="_blank">
+          <a href="./recipes/sauce/ranch_sauce.html" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://www.feastingathome.com/wp-content/uploads/2022/03/Ranch-Dressing-Recipe-9.jpg"
               class="img recipe-img"
@@ -2674,7 +2676,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="./recipes/sauce/rick_and_morty_sechuan_sauce.html" class="recipe" target="_blank">
+          <a href="./recipes/sauce/rick_and_morty_sechuan_sauce.html" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://desirerecipes.com/wp-content/uploads/2022/01/image-23-1.jpg.webp"
               class="img recipe-img"
@@ -2685,7 +2687,7 @@
           </a>
           <!-- end of single recipe -->
           <!-- single recipe -->
-          <a href="./recipes/sauce/tartar_martas.html" class="recipe" target="_blank">
+          <a href="./recipes/sauce/tartar_martas.html" class="recipe" target="_blank" rel="noopener noreferrer">
             <img
               src="https://kep.index.hu/1/0/2344/23445/234457/23445750_9fbcfedc2f49c34a8f831b70b1254858_wm.jpg"
               class="img recipe-img"
