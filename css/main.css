@@ -1196,3 +1196,12 @@ input:focus-visible {
     display: none;
   }
 }
+.nav-btn i {
+  display: none;
+}
+
+.nav-btn::before {
+  content: "☰";
+  font-size: 1.35rem;
+  line-height: 1;
+}
